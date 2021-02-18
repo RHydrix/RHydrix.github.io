@@ -1,2 +1,0 @@
-# wafflesbot
-bot for discord
