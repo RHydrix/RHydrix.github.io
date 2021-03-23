@@ -1,0 +1,701 @@
+/*extracted and modified from w3.css which you can get here:https://www.w3schools.com/w3css/4/w3.css*/
+/*Modified by changing css tag names and using only the tags that are needed for waffl3dev.co.uk index file */
+/* ===main=== */
+html{
+  background-color: #000
+}
+html {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Ubuntu", sans-serif
+}
+*, *:before, *:after {
+  box-sizing: inherit
+}
+
+
+html, body {
+  font-size: 15px;
+  line-height: 1.5
+}
+img{
+  vertical-align: middle;
+  border-style: none;
+}
+
+#listObjectPricing{
+  margin-left:auto;
+  margin-right:auto;
+}
+button, input, select, textarea, optgroup {
+  font: inherit;
+  margin: 0
+}
+#colorKeys{
+  width: 100%;
+}
+#hexa{
+  width: 100%;
+  margin-bottom: 10px;
+
+}
+
+button, input {
+  overflow: visible
+}
+
+button, select {
+  text-transform: none
+}
+
+button, [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible
+}
+/* ===other=== */
+.objRoundCorn{
+  border-radius: 5px;
+}
+.objBarRoundCorn{
+  border-radius: 5px 0 0 5px;
+}
+.objListTopRoundCorn{
+  border-radius: 5px 5px 0 0;
+}
+.objListBottomRoundCorn{
+  border-radius: 0 0 5px 5px;
+}
+.objPadLeft{
+  padding-left: 10px;
+}
+.objPadRight{
+  padding-right: 10px;
+}
+.objPadTop{
+  padding-top: 10px;
+}
+.objPadBottom{
+  padding-bottom: 10px;
+}
+.objWidget{
+  width: 350;
+  height: 500
+}
+.objLeft {
+  float: left !important
+}
+
+.objRight {
+  float: right !important
+}
+
+.objSmall {
+  font-size: 12px !important
+}
+
+.objWide {
+  letter-spacing: 4px
+}
+
+.objJumbo {
+  font-size: 64px !important
+}
+
+.objLarge {
+  font-size: 18px !important
+}
+
+.objXlarge {
+  font-size: 24px !important
+}
+
+.objXxlarge {
+  font-size: 36px !important
+}
+
+#imgProfile {
+  width: 100%;
+}
+
+.objImage {
+  max-width: 100%;
+  height: auto
+}
+#GameList {
+  width: 100%;
+  height: 1000px;
+  border: none;
+
+}
+#main {
+  margin-left: 120px;
+}
+
+/* ===content=== */
+.objContent, .objAuto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.objContent {
+  max-width: 980px
+}
+
+/* ===sidebar=== */
+.objSidebar {
+  width: 120px;
+  background: #222;
+
+  background-image: initial;
+  background-color: rgb(26,28,29);
+
+  height: 100%;
+  position: fixed !important;
+  z-index:1;
+  overflow: auto;
+}
+
+
+.objBar-block .objDropdown-hover, .objBar-block .objDropdown-click {
+  width: 100%
+}
+
+.objBar-block .objDropdown-hover .objDropdown-content, .objBar-block .objDropdown-click .objDropdown-content {
+  min-width: 100%
+}
+
+.objBar-block .objDropdown-hover .objButton, .objBar-block .objDropdown-click .objButton {
+  width: 100%;
+  text-align: left;
+  padding: 8px 16px
+}
+
+.objBar {
+  width: 100%;
+  overflow: hidden
+}
+
+.objCenter .objBar {
+  display: inline-block;
+  width: auto
+}
+
+.objBar .objBar-item {
+  padding: 8px 16px;
+  float: left;
+  width: auto;
+  border: none;
+  display: block;
+  outline: 0
+}
+
+.objBar .objDropdown-hover, .objBar .objDropdown-click {
+  position: static;
+  float: left
+}
+
+.objBar .objButton {
+  white-space: normal
+}
+
+.objBar-block .objBar-item {
+  width: 100%;
+  display: block;
+  padding: 8px 16px;
+  text-align: left;
+  border: none;
+  white-space: normal;
+  float: none;
+  outline: 0
+}
+
+.objBar-block.objCenter .objBar-item {
+  text-align: center
+}
+
+.objBlock {
+  display: block;
+  width: 100%
+}
+
+.objShow-block, .objShow {
+  display: block !important
+}
+
+.objShow-inline-block {
+  display: inline-block !important
+}
+
+/* ===align=== */
+.objForceRight{
+  margin-left: 50%
+}
+.objLeftAlign {
+  text-align: left !important
+}
+
+.objRightAlign {
+  text-align: right !important
+}
+
+.objJustify {
+  text-align: justify !important
+}
+
+.objCenter {
+  text-align: center !important
+}
+
+/* ===mobile=== */
+.objMobile {
+  display: block;
+  width: 100% !important
+}
+
+.objBar-item.objMobile, .objDropdown-hover.objMobile, .objDropdown-click.objMobile {
+  text-align: center
+}
+
+/* ===color=== */
+.btnColor-hover{
+  border-color: #9e9e9e;
+  border-style: solid
+}
+.itemColor-black, .itemColor-hover-black:hover {
+  color: #fff !important;
+  background-color: #000 !important
+}
+
+.itemColor-grey, .itemColor-hover-grey:hover, .itemColor-gray, .itemColor-hover-gray:hover {
+  color: #000 !important;
+  background-color: #9e9e9e !important
+}
+
+.itemColor-light-grey, .itemColor-hover-light-grey:hover, .itemColor-light-gray, .itemColor-hover-light-gray:hover {
+  color: #000 !important;
+  background-color: #f1f1f1 !important
+}
+
+.itemColor-white, .itemColor-hover-white:hover {
+  color: #000 !important;
+  background-color: #fff !important
+}
+
+.itemColor-dark-grey, .itemColor-hover-dark-grey:hover, .itemColor-dark-gray, .itemColor-hover-dark-gray:hover {
+  color: #fff !important;
+  background-color: #616161 !important
+}
+
+/* ===textColor=== */
+.itemColor-text-grey, .itemColor-hover-text-grey:hover, .itemColor-text-gray, .itemColor-hover-text-gray:hover {
+  color: #757575 !important
+}
+
+.itemColor-text-black, .itemColor-hover-text-black:hover {
+  color: #000 !important
+}
+
+.itemColor-text-light-grey, .itemColor-hover-text-light-grey:hover, .itemColor-text-light-gray, .itemColor-hover-text-light-gray:hover {
+  color: #f1f1f1 !important
+}
+
+.itemColor-text-white, .itemColor-hover-text-white:hover {
+  color: #fff !important
+}
+
+.itemColor-text-dark-grey, .itemColor-hover-text-dark-grey:hover, .itemColor-text-dark-gray, .itemColor-hover-text-dark-gray:hover {
+  color: #3a3a3a !important
+}
+
+/* ===padding=== */
+.objRowPadding img {
+  margin-bottom: 12px
+}
+
+.objPadding-small {
+  padding: 4px 8px !important
+}
+
+.objPadding {
+  padding: 8px 16px !important
+}
+
+.objPadding-large {
+  padding: 12px 24px !important
+}
+.objPadding-8 {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important
+}
+
+.objPadding-16 {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important
+}
+
+.objPadding-24 {
+  padding-top: 24px !important;
+  padding-bottom: 24px !important
+}
+
+.objPadding-32 {
+  padding-top: 32px !important;
+  padding-bottom: 32px !important
+}
+
+.objPadding-64 {
+  padding-top: 64px !important;
+  padding-bottom: 64px !important
+}
+
+/* ===cell=== */
+.objCell-row:before, .objCell-row:after, .objclear:after, .objclear:before, .objBar:before, .objBar:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.objCell-row {
+  display: table;
+  width: 100%
+}
+
+.objCell {
+  display: table-cell
+}
+
+.objCell-top {
+  vertical-align: top
+}
+
+.objCell-middle {
+  vertical-align: middle
+}
+
+.objCell-bottom {
+  vertical-align: bottom
+}
+
+/* ===table=== */
+.objTable, .objTable-all {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  display: table
+}
+
+.objTable-all {
+  border: 1px solid #ccc
+}
+
+.objTable td, .objTable th, .objTable-all td, .objTable-all th {
+  padding: 8px 8px;
+  display: table-cell;
+  text-align: left;
+  vertical-align: top
+}
+
+.objTable th:first-child, .objTable td:first-child, .objTable-all th:first-child, .objTable-all td:first-child {
+  padding-left: 16px
+}
+
+/* ===button=== */
+.objBtn, .objButton {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap
+}
+
+.objBtn:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.objDisabled, .objBtn:disabled, .objButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.3
+}
+
+.objDisabled *, :disabled * {
+  pointer-events: none
+}
+
+.objBtn, .objButton {
+  /*-webkit-touch-callout: none;*/
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+
+.objDropdown-hover:hover>.objButton:first-child, .objDropdown-click:hover>.objButton:first-child {
+  background-color: #ccc;
+  color: #000
+}
+
+/* ===hover=== */
+.objOpacity, .objHover-opacity:hover {
+  opacity: 0.60
+}
+
+.objOpacity-off, .objHover-opacity-off:hover {
+  opacity: 1
+}
+
+/* ===section=== */
+.objSection, .objCode {
+  margin-top: 16px !important;
+  margin-bottom: 16px !important
+}
+
+/* ===input=== */
+.objInput {
+  padding: 8px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 100%
+}
+
+.obj-animate-input {
+  transition: width 0.4s ease-in-out
+}
+
+.obj-animate-input:focus {
+  width: 100% !important
+}
+
+/* ===modal=== */
+.objModal {
+  z-index: 3;
+  display: none;
+  padding-top: 100px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4)
+}
+
+.objModal-content {
+  margin: auto;
+  background-color: #fff;
+  position: relative;
+  padding: 0;
+  outline: 0;
+  width: 600px
+}
+
+@media only screen and (max-width: 600px) {
+  #main {
+    margin-left: 0
+  }
+}
+
+@media (max-width:1205px) {
+  .objAuto {
+    max-width: 95%
+  }
+}
+
+@media (max-width:600px) {
+  .objModal-content {
+    margin: 0 10px;
+    width: auto !important
+  }
+
+  .objModal {
+    padding-top: 30px
+  }
+
+  .objDropdown-hover.objMobile .objDropdown-content, .objDropdown-click.objMobile .objDropdown-content {
+    position: relative
+  }
+
+  .objHide-small {
+    display: none !important
+  }
+
+  .objMobile {
+    display: block;
+    width: 100% !important
+  }
+
+  .objBar-item.objMobile, .objDropdown-hover.objMobile, .objDropdown-click.objMobile {
+    text-align: center
+  }
+
+  .objDropdown-hover.objMobile, .objDropdown-hover.objMobile .objBtn, .objDropdown-hover.objMobile .objButton, .objDropdown-click.objMobile, .objDropdown-click.objMobile .objBtn, .objDropdown-click.objMobile .objButton {
+    width: 100%
+  }
+}
+
+@media (max-width:768px) {
+  .objModal-content {
+    width: 500px
+  }
+
+  .objModal {
+    padding-top: 50px
+  }
+}
+
+@media (min-width:993px) {
+  .objModal-content {
+    width: 900px
+  }
+
+  .objHide-large {
+    display: none !important
+  }
+
+  .objSidebar.objCollapse {
+    display: block !important
+  }
+}
+
+@media (max-width:992px) and (min-width:601px) {
+  .objHide-medium {
+    display: none !important
+  }
+}
+
+@media (max-width:992px) {
+  .objSidebar.objCollapse {
+    display: none
+  }
+
+  .objMain {
+    margin-left: 0 !important;
+    margin-right: 0 !important
+  }
+
+  .objAuto {
+    max-width: 100%
+  }
+}
+
+/* ===top/bottom=== */
+.objTop, .objBottom {
+  position: relative;
+  width: 100%;
+  z-index: 1
+}
+
+.objTop {
+  top: 0
+}
+
+.objBottom {
+  bottom: 0
+}
+
+/* ===margin=== */
+.objMargin {
+  margin: 16px !important
+}
+
+.objAdvMargin {
+  margin-right: 16px !important;
+  margin-left: 16px !important;
+  padding-top: 15px;
+  padding-bottom: 15px
+}
+
+.objMargin-top {
+  margin-top: 8px !important
+}
+
+.objMargin-bottom {
+  margin-bottom: 8px !important
+}
+
+.objMargin-left {
+  margin-left: 64px !important
+}
+
+.objMargin-right {
+  margin-right: 16px !important
+}
+
+/* ===lessthan1=== */
+.obj-col, .obj-half, .obj-third, .obj-twothird, .obj-threequarter, .obj-quarter {
+  float: left;
+  width: 100%
+}
+
+.obj-col.m6, .obj-half {
+  width: 49.99999%
+}
+
+.obj-col.m3, .obj-quarter {
+  width: 24.99999%
+}
+
+/* ===row=== */
+.objContainer:after, .objContainer:before, .objPanel:after, .objPanel:before, .objRow:after, .objRow:before, .objRow-padding:after, .objRow-padding:before,
+.objCell-row:before, .objCell-row:after, .objClear:after, .objClear:before, .objBar:before, .objBar:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.objRow-padding, .objRow-padding>.obj-half, .objRow-padding>.obj-third, .objRow-padding>.obj-twothird, .objRow-padding>.obj-threequarter, .objRow-padding>.obj-quarter, .objRow-padding>.obj-col {
+  padding: 0 8px
+}
+
+/* ===lists=== */
+.objUl {
+  list-style-type: none;
+  padding: 0;
+  margin: 0
+}
+
+.objUl li {
+  padding: 8px 16px;
+  border-bottom: 1px solid #ddd
+}
+
+.objUl li:last-child {
+  border-bottom: none
+}
+
+.objHoverable tbody tr:hover, .objUl.objHoverable li:hover {
+  background-color: #ccc
+}
+
+/* ===circle=== */
+.objCircle {
+  border-radius: 50%
+}
