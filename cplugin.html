@@ -13,7 +13,7 @@
   <!-- Avatar image in top left corner -->
   <img src="./imgs/ProfileImg.png" id="imgProfile">
   <!--img by Luminaros https://twitter.com/luminaros-->
-  <a href="index.html" class="objBar-item objButton objPadding-large itemColor-darkMode">
+  <a href="index.html" class="objBar-item objButton objPadding-large itemColor-black">
     <i class="fas fa-home objXxlarge"></i>
     <p>HOME</p>  </a>
   <a href="about.html" class="objBar-item objButton objPadding-large itemColor-hover-black">
@@ -59,9 +59,9 @@
   </div>
   </header>
   <h2>How to create plugins for WafflesBot</h2>
-<div class="itemColor-white objContent wrapper green">
+<div class="itemColor-white objContent wrapper">
   <h2>Requirements:</h2>
-  <div class="objLeft waffl3ObjAlt ">
+  <div class="objLeft waffl3ObjAlt">
   <p class="objLarge waffl3TextPad objBlock waffButtons">NodeJs/NPM: </p>
   <p class="objLarge waffl3TextPad objBlock waffButtons">Linux NodeJs/NPM: </p>
   <p class="objLarge waffl3TextPad objBlock waffButtons">GitBash: </p>
@@ -69,11 +69,11 @@
   <p class="objLarge waffl3TextPad objBlock waffButtons">GitHub Account: </p>
 </div>
 <div class="waffl3ObjAlt objRight">
-  <form action="https://nodejs.org/en/"><button class="itemColor-dark-gray itemColor-hover-white itemColor-text-white itemColor-hover-white objRoundCorn objButton waffButtons objBlock objLarge">Download Here</button></form>
-  <form action="https://nodejs.org/en/download/package-manager/"><button class="itemColor-dark-gray itemColor-hover-white itemColor-text-white itemColor-hover-white objRoundCorn objButton waffButtons objBlock objLarge">Linux Info</button></form>
-  <form action="https://gitforwindows.org/"><button class="itemColor-dark-gray itemColor-hover-white itemColor-text-white itemColor-hover-white objRoundCorn objButton waffButtons objBlock objLarge">Download GitBash</button></form>
-  <form action="https://gitforwindows.org/"><button class="itemColor-dark-gray itemColor-hover-white itemColor-text-white itemColor-hover-white objRoundCorn objButton waffButtons objBlock objLarge">Download Here</button></form>
-  <form action="https://github.com/"><button class="itemColor-dark-gray itemColor-hover-white itemColor-text-white itemColor-hover-white objRoundCorn objButton waffButtons objBlock objLarge">Website</button></form>
+  <form action="https://nodejs.org/en/"><button class="itemColor-dark-gray itemColor-hover-white itemColor-text-white itemColor-hover-white objRoundCorn objButton waffButtons waffl3Block objLarge">Download Here</button></form>
+  <form action="https://nodejs.org/en/download/package-manager/"><button class="itemColor-dark-gray itemColor-hover-white itemColor-text-white itemColor-hover-white objRoundCorn objButton waffButtons waffl3Block objLarge">Linux Info</button></form>
+  <form action="https://gitforwindows.org/"><button class="itemColor-dark-gray itemColor-hover-white itemColor-text-white itemColor-hover-white objRoundCorn objButton waffButtons waffl3Block objLarge">Download GitBash</button></form>
+  <form action="https://gitforwindows.org/"><button class="itemColor-dark-gray itemColor-hover-white itemColor-text-white itemColor-hover-white objRoundCorn objButton waffButtons waffl3Block objLarge">Download Here</button></form>
+  <form action="https://github.com/"><button class="itemColor-dark-gray itemColor-hover-white itemColor-text-white itemColor-hover-white objRoundCorn objButton waffButtons waffl3Block objLarge">Website</button></form>
 </div>
 <p class="objLarge waffl3TextPad objBlock objMargin-top">Your preferred text editor:</p>
 <ul>
@@ -85,31 +85,61 @@
 <p class="objLarge waffl3TextPad objBlock objMargin-top">*Note: NPM comes installed with NodeJs and community packages are <a href="https://www.npmjs.com/">here</a></p>
 <p class="objLarge waffl3TextPad objBlock objMargin-top">*Note: You can use GitHub desktop if you do not want to use command line</p>
 <p class="objCenter">------------------------------------------------------</p>
-<p>Basic File Format</p>
-<h2>Anything inside of two // is personal to you anything inside of || is technically optional, anything within two ~~ is required and anything inside of ## is where you would name a variable or function (this can be anything!)</h2>
+<h1>Rules for WafflesBot Community Plugins</h1>
 <span>
-  <h3>Top of file</h3>
+  <ul class="objLarge">
+    <li>Waffl3Development supports everyone no matter their race, gender, sexual orientation, religion, etc., We have zero-tolerance for hate speech. Any insult or slur that is racially charged, or based upon a certain gender identity or sexual orientation is <span class="itemColor-text-red">NOT ALLOWED</span> and will result in immediate ban from the Waffl3Development team and any plugins made by the offender will be immediately removed</li>
+    <br />
+    <li>No incredibly offensive language! Normal swears are fine as long as they are not used to insult</li>
+    <br />
+    <li>Submitting someone else's code as your own is <span class="itemColor-text-red">NOT ALLOWED</span> and will result in immediate ban from the Waffl3Development team and any plugins made by the offender will be immediately removed</li>
+    <br />
+    <li>No code that is intentionally designed to spam something to the console or out to chat</li>
+    <br />
+    <li>No code that requires someone to enter confidential information</li>
+    <br />
+    <li>No code that displays or describes gross or sexual content</li>
+    <br />
+    <li>Code that is used to threaten or intimidate is <span class="itemColor-text-red">NOT ALLOWED</span> and will result in immediate ban from the Waffl3Development team and any plugins made by the offender will be immediately removed</li>
+  </ul>
+  <p>These rules are subject to change as more plugins are created and added</p>
+</span>
+<p class="objCenter">------------------------------------------------------</p>
+<h2>Anything below that is inside of two // is personal to you anything inside of || is technically optional, anything within two ~~ is required and anything inside of ## is where you would name a variable or function (this can be anything!), I also color coded it anything in <span class="itemColor-text-teal">cyan</span> needs to be written exactly as seen anything in <span class="itemColor-text-gold">gold</span> is optional and anything in <span class="itemColor-text-spring">light green</span> is where you specifically would fill something in</h2>
+<h1>Basic File Format</h1>
+<span>
+  <h2>Top of file</h2>
   <p class="itemColor-text-gray">/Name/ /GitHub Link/ This is commented out</p>
   <p class="itemColor-text-gray">/simple explanation/ This is commented out</p>
-  <p class="itemColor-text-gold">|Requirements: this is where you would indicate any required npm modules or files|</p>
-
-  <p>e.g. `const <span class="itemColor-text-spring">#variableName#</span> = require('<span class="itemColor-text-spring">#Modual or File#</span>');`</p>
-  <p>function <span class="itemColor-text-spring">#functionName#</span>(){</p>
-  <h2>Your code goes here</h2>
-  <p>~return~</p>
+  <p>|<span class="itemColor-text-gold">Requirements: this is where you would indicate any required npm modules or files</span>|</p>
+  <p><span class="itemColor-gold objPadding objRoundCorn">eg. |<span class="itemColor-text-teal">const </span>#<span class="itemColor-text-spring">variableName</span>#<span class="itemColor-text-teal"> = require('</span>~<span class="itemColor-text-spring">Modual or File</span>~<span class="itemColor-text-teal">');</span>|</span></p>
+  <p>~<span class="itemColor-text-teal">function</span> #<span class="itemColor-text-spring">functionName</span>#<span class="itemColor-text-teal">(){</span>~</p>
+  <h3>Your code goes here</h3>
+  <p>~<span class="itemColor-text-teal">return</span>~</p>
   <p>}</p>
- <p>~module.exports = {<span class="itemColor-text-spring">#functionName#</span>};~</p> <h2>This is required for wafflesbot to access it</h2>
+ <p>~<span class="itemColor-text-teal">module.exports = {</span>#<span class="itemColor-text-spring">functionName</span>#<span class="itemColor-text-teal">};</span>~ <span class="objLarge">This is required for wafflesbot to access it</span></p>
+
+<h3>End of Code</h3>
+<p class="itemColor-text-gray">~Do you want to be/or are a part of Waffl3Development? Yes/No~ This is commented out</p>
+<p class="itemColor-text-gray">~Names of any community Module creators and module names~ This is commented out</p>
+<p class="itemColor-text-gray">~unique UUID~ Not yet implemented and can be ignored for now</p>
+<p class="itemColor-text-gray">file should have the .js extension eg. blah.js</p>
+<h2>End of File</h2>
 </span>
-
-
-
-
-
-
-
-
-
-
+<p class="objCenter">------------------------------------------------------</p>
+<h2>How to Submit Your Plugin</h2>
+<h3 class="itemColor-text-gold">If you dont want to use the command line, you can use github desktop on Windows and Mac which does everything I describe below in a simple and intuitive application and is alot more visual and easy</h3>
+<p>If you are a part of the Waffl3Development team, you can either use your own GitHub repository or you can use your personal Waffl3Development Team folder on the Waffl3Development Github</p>
+<p>Make sure you create or have a specific folder for your finished plugins</p>
+<p>Open GitBash and navigate to the folder, GitBash will allow you to open a window directly in that folder via right click</p>
+<p>type "<span class="itemColor-text-teal">git init</span>"</p>
+<p>type "<span class="itemColor-text-teal">git remote add </span>#<span class="itemColor-text-spring">remoteRepository</span>#" where the remoteRepository is your Github repository or the Waffl3Development repository</p>
+<p><span class="itemColor-text-gold objLarge">*Note:</span> if you already have things in that remote repository type "<span class="itemColor-text-teal">git clone </span>#<span class="itemColor-text-spring">remoteRepository</span>#" where the remoteRepository is your Github repository or the Waffl3Development repository</p>
+<p>anything placed into that folder will be able to be sent to the github repository but you have to add, commit and push them first</p>
+<p>type "<span class="itemColor-text-teal">git add </span>#<span class="itemColor-text-spring">fileName</span>#" or "<span class="itemColor-text-teal">git add .</span>" to add all files, this makes it so git knows what to add to the repository</p>
+<p>type "<span class="itemColor-text-teal">git commit -m "</span>#<span class="itemColor-text-spring">commit message</span>#<span class="itemColor-text-teal">"</span> " Git requires you to add commit messages which tells people who are looking at the repository what was changed and when, it could also just be random letters</p>
+<p>type "<span class="itemColor-text-teal">git push origin master</span>" Finally you push all the changes you made to the repository location</p>
+<br />
 </div>
 
 <span></span>

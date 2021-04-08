@@ -81,6 +81,10 @@ html {
     margin-block-end: 0px;
     margin-block-start: 0px;
   }
+  .waffl3Block{
+    width: 90%;
+    display:block;
+  }
 /*else*/
 body, h1, h2, h3, h4, h5, h6 {
   font-family: "Ubuntu", sans-serif
@@ -310,7 +314,6 @@ hr {
 
 .objBlock {
   display: block;
-
   width: 100%
 }
 
@@ -386,7 +389,22 @@ adsf
   color: #fff !important;
   background-color: #616161 !important
 }
-
+.itemColor-gold, .itemColor-hover-gold:hover{
+  background-color: #B8860B !important;
+    color: #fff !important;
+}
+.itemColor-spring, .itemColor-hover-spring:hover{
+  background-color: #32CD32 !important;
+  color: #fff !important;
+}
+.itemColor-red, .itemColor-hover-red:hover{
+  background-color:red !important;
+  color: #fff !important;
+}
+.itemColor-teal, .itemColor-hover-teal:hover{
+  background-color:#48D1CC;
+  color: #fff !important;
+}
 /* ===textColor=== */
 .itemColor-text-grey, .itemColor-hover-text-grey:hover, .itemColor-text-gray, .itemColor-hover-text-gray:hover {
   color: #757575 !important
@@ -408,12 +426,17 @@ adsf
   color: #3a3a3a !important
 }
 .itemColor-text-gold, .itemColor-hover-text-gold:hover{
-  color: #FFD700 !important
+  color: #B8860B !important
 }
 .itemColor-text-spring, .itemColor-hover-text-spring:hover{
-  color: #00FF7F !important
+  color: #32CD32 !important
 }
-
+.itemColor-text-red, .itemColor-hover-text-red:hover{
+  color:red !important;
+}
+.itemColor-text-teal, .itemColor-hover-text-teal:hover{
+  color:#48D1CC
+}
 /* ===padding=== */
 .objRowPadding img {
   margin-bottom: 12px
