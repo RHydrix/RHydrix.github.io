@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<title>Waffl3Development Apps and Information</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="Style.css" />
+<body class="itemColor-darkMode">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="objSidebar objBar-block objSmall objHide-small objCenter">
+  <!-- Avatar image in top left corner -->
+  <img src="./imgs/ProfileImg.png" id="imgProfile">
+  <!--img by Luminaros https://twitter.com/luminaros-->
+  <a href="index.html" class="objBar-item objButton objPadding-large itemColor-darkMode">
+    <i class="fas fa-home objXxlarge"></i>
+    <p>HOME</p>  </a>
+  <a href="about.html" class="objBar-item objButton objPadding-large itemColor-hover-black">
+    <i class="fas fa-user objXxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="gameslist.html" class="objBar-item objButton objPadding-large itemColor-hover-black">
+    <i class="fas fa-scroll objXxlarge"></i>
+    <p>GAMES LIST</p>
+  </a>
+  <a href="#contact" class="objBar-item objButton objPadding-large itemColor-hover-black">
+    <i class="fas fa-envelope objXxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="objTop objHide-large objHide-medium" id="myNavbar">
+  <div class="objBar itemColor-darkMode objOpacity objHover-opacity-off objCenter objSmall">
+    <a href="index.html" class="objBar-item objButton" style="width:25% !important">HOME</a>
+    <a href="about.html" class="objBar-item objButton" style="width:25% !important">ABOUT</a>
+    <a href="gameslist.html" class="objBar-item objButton" style="width:25% !important">GAMES LIST</a>
+    <a href="#contact" class="objBar-item objButton" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="objPadding-large" id="main">
+  <!-- Header/Home -->
+  <header class="objContainer objPadding-32 objCenter itemColor-darkMode" id="home">
+    <div class="objHide-small">
+    <h1 class="objJumbo">Waffl3Development</h1>
+    <p>Python, C++, and Programmer of WafflesBot.</p>
+    <img src="./imgs/colorKeys.jpg" alt="colorKeys" class="objImage" id="colorKeys">
+    <!--img by Marius Niveri https://unsplash.com/@m4r1vs-->
+  </div>
+
+  <div class="objHide-large objHide-medium">
+    <h1 class="objLarge">Waffl3Development</h1>
+    <p>Python, C++, and Programmer of WafflesBot.</p>
+    <img src="./imgs/colorKeys.jpg" alt="colorKeys" class="objImage" id="colorKeys">
+    <!--img by Marius Niveri https://unsplash.com/@m4r1vs-->
+  </div>
+  </header>
+  <h2>How to create plugins for WafflesBot</h2>
+<div class="itemColor-white objContent wrapper green">
+  <h2>Requirements:</h2>
+  <div class="objLeft waffl3ObjAlt ">
+  <p class="objLarge waffl3TextPad objBlock waffButtons">NodeJs/NPM: </p>
+  <p class="objLarge waffl3TextPad objBlock waffButtons">Linux NodeJs/NPM: </p>
+  <p class="objLarge waffl3TextPad objBlock waffButtons">GitBash: </p>
+  <p class="objLarge waffl3TextPad objBlock waffButtons">Git Linux/Mac: </p>
+  <p class="objLarge waffl3TextPad objBlock waffButtons">GitHub Account: </p>
+</div>
+<div class="waffl3ObjAlt objRight">
+  <form action="https://nodejs.org/en/"><button class="itemColor-dark-gray itemColor-hover-white itemColor-text-white itemColor-hover-white objRoundCorn objButton waffButtons objBlock objLarge">Download Here</button></form>
+  <form action="https://nodejs.org/en/download/package-manager/"><button class="itemColor-dark-gray itemColor-hover-white itemColor-text-white itemColor-hover-white objRoundCorn objButton waffButtons objBlock objLarge">Linux Info</button></form>
+  <form action="https://gitforwindows.org/"><button class="itemColor-dark-gray itemColor-hover-white itemColor-text-white itemColor-hover-white objRoundCorn objButton waffButtons objBlock objLarge">Download GitBash</button></form>
+  <form action="https://gitforwindows.org/"><button class="itemColor-dark-gray itemColor-hover-white itemColor-text-white itemColor-hover-white objRoundCorn objButton waffButtons objBlock objLarge">Download Here</button></form>
+  <form action="https://github.com/"><button class="itemColor-dark-gray itemColor-hover-white itemColor-text-white itemColor-hover-white objRoundCorn objButton waffButtons objBlock objLarge">Website</button></form>
+</div>
+<p class="objLarge waffl3TextPad objBlock objMargin-top">Your preferred text editor:</p>
+<ul>
+  <li>Personal Reccomendation: Atom Text Editor</li>
+  <li>Visual Studio</li>
+  <li>Brackets</li>
+  <li>notepad++</li>
+</ul>
+<p class="objLarge waffl3TextPad objBlock objMargin-top">*Note: NPM comes installed with NodeJs and community packages are <a href="https://www.npmjs.com/">here</a></p>
+<p class="objLarge waffl3TextPad objBlock objMargin-top">*Note: You can use GitHub desktop if you do not want to use command line</p>
+<p class="objCenter">------------------------------------------------------</p>
+<p>Basic File Format</p>
+<h2>Anything inside of two // is personal to you anything inside of || is technically optional, anything within two ~~ is required and anything inside of ## is where you would name a variable or function (this can be anything!)</h2>
+<span>
+  <h3>Top of file</h3>
+  <p class="itemColor-text-gray">/Name/ /GitHub Link/ This is commented out</p>
+  <p class="itemColor-text-gray">/simple explanation/ This is commented out</p>
+  <p class="itemColor-text-gold">|Requirements: this is where you would indicate any required npm modules or files|</p>
+
+  <p>e.g. `const <span class="itemColor-text-spring">#variableName#</span> = require('<span class="itemColor-text-spring">#Modual or File#</span>');`</p>
+  <p>function <span class="itemColor-text-spring">#functionName#</span>(){</p>
+  <h2>Your code goes here</h2>
+  <p>~return~</p>
+  <p>}</p>
+ <p>~module.exports = {<span class="itemColor-text-spring">#functionName#</span>};~</p> <h2>This is required for wafflesbot to access it</h2>
+</span>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<span></span>
+  <!-- Contact Section -->
+  <div class="objPadding-64 objContent itemColor-text-grey" id="contact">
+    <h2 class="itemColor-text-light-grey">Contact Me</h2>
+    <hr class="objOpacity">
+<!--width:200px-->
+      <div class="itemColor-darkMode itemColor-hover-white itemColor-text-white itemColor-hover-black objXxlarge objRoundCorn"><i class="fas fa-phone fa-fw objMargin"></i><span class="objForceRight objXlarge objPadRight">Phone: (216)-798-8279</span></div>
+      <div class="itemColor-darkMode itemColor-hover-white itemColor-text-white itemColor-hover-black objXxlarge objRoundCorn"><i class="fas fa-map-marker fa-fw objMargin"></i><span class="objForceRight objXlarge objPadRight">Cleveland OH, United States</span></div>
+      <div class="itemColor-darkMode itemColor-hover-white itemColor-text-white itemColor-hover-black objXxlarge objRoundCorn"><i class="fas fa-envelope fa-fw objMargin"></i><span class="objForceRight objXlarge objPadRight">Email: tholst371@gmail.com</span></div>
+    <hr class="objOpacity"><br>
+  <!-- End Contact Section -->
+  </div>
+
+    <!-- Footer -->
+ <footer class="objContent objPadding-64 itemColor-text-grey objXlarge objCenter">
+    <i class="fab fa-instagram objHover-opacity"></i>
+    <i class="fab fa-snapchat objHover-opacity"></i>
+    <i class="fab fa-twitter objHover-opacity"></i>
+    <i class="fab fa-linkedin objHover-opacity"></i>
+
+  <!-- End footer -->
+</footer>
+<!-- END PAGE CONTENT -->
+</div>
+</body>
+</html>
+<!--original css file created by w3Schools found here: https://www.w3schools.com/w3css/ but only certain parts were moved to a new css file and changed for more generic and personal use -->
