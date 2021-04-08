@@ -31,12 +31,12 @@ html {
   }
   /*waffleBotSpecific*/
   .waffl3ObjLeft{
-    border-left-color: #121212 !important;
+    border-left-color: transparent !important;
     border-left-style: solid;
     border-left-width: 8px
   }
   .waffl3ObjRight{
-    border-right-color: #121212 !important;
+    border-right-color: transparent !important;
     border-right-style: solid;
     border-right-width: 8px
   }
