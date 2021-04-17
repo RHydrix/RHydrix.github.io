@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-<title>Waffl3Development Apps and Information</title>
+<title>Waffl3Development Status Page</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <link rel="stylesheet" href="Style.css" />
-<body class="itemColor-darkMode">
+<body class="itemColor-darkMode" onload="fileRead();">
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="objSidebar objBar-block objSmall objHide-small objCenter">
@@ -60,10 +60,21 @@
   </header>
 
   <!-- About Section -->
-  <div class="objContent objJustify itemColor-text-grey objPadding-64" id="about">
-    <h2 class="itemColor-text-light-grey">Thomas Holst</h2>
-    <hr style="width:200px" class="objOpacity">
-    <p>Nothing here yet!
+<div class="objContent objJustify itemColor-text-grey objPadding-64" id="about">
+  <h2 class="itemColor-text-light-grey">Status</h2>
+  <hr style="width:200px" class="objOpacity">
+  <div class="objRow objCenter objPadding-16 objSection itemColor-light-grey objRoundCorn objContent">
+    <div class="objSection objCenter">
+      <span class="objXxlarge" id="curStatus"></span><br>
+    </div>
+  </div>
+
+  <h2 class="itemColor-text-light-grey">Changelog</h2>
+  <hr style="width:200px" class="objOpacity">
+  <div class="itemColor-white objContent wrapper">
+    <iframe src="https://waffl3dev.co.uk/changelog.html" width="100%" ></iframe>
+  </div>
+    <!-- <p>Nothing here yet!
     </p>
     <h3 class="objPadding-16 itemColor-text-light-grey">My Skills</h3>
     <p class="objWide">WafflesBot with Nodejs & javascript</p>
@@ -110,7 +121,7 @@
     <button class="objButton itemColor-light-grey itemColor-text-black itemColor-hover-dark-grey itemColor-hover-text-white objPadding-large objSection objRoundCorn">
       <i class="fa fa-download"></i> Download Resume
     </button>
-</div>
+</div>-->
     <!-- Grid for wafflesBot --><!--
 <div class="objPadding-64 objContent" id="WafflesBot">
     <h2 class="itemColor-text-light-grey">WafflesBot</h2>
@@ -184,7 +195,7 @@
 
 <!-- END PAGE CONTENT -->
 </div>
-
+<script src="script.js"></script>
 </body>
 </html>
 <!--original css file created by w3Schools found here: https://www.w3schools.com/w3css/ but only certain parts were moved to a new css file and changed for more generic and personal use -->

@@ -151,6 +151,12 @@ hr {
   height: 0;
   overflow: visible
 }
+.itemColor-border-black{
+  border-color: #000 !important;
+  border-width: 2px !important;
+  border-style:solid !important;
+}
+
 /* ===other=== */
 .objRoundCorn{
   border-radius: 5px;
@@ -385,10 +391,20 @@ adsf
   background-color: #fff !important
 }
 
+.itemColor-OBlue, .itemColor-hover-OBlue:hover {
+  color: #000 !important;
+  background-color: #2B65EC !important
+}
+
+.itemColor-text-OBlue, .itemColor-text-OBlue:hover {
+  color: #2B65EC !important;
+}
+
 .itemColor-dark-grey, .itemColor-hover-dark-grey:hover, .itemColor-dark-gray, .itemColor-hover-dark-gray:hover {
   color: #fff !important;
   background-color: #616161 !important
 }
+
 .itemColor-gold, .itemColor-hover-gold:hover{
   background-color: #B8860B !important;
     color: #fff !important;
