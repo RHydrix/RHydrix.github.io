@@ -29,6 +29,21 @@ html {
     border-color: purple;
     border-style: dotted;
   }
+
+  /*changelogtop*/
+  .chng{
+      margin: 0;
+      padding: 0;
+      border-color: #292929;
+      border-style: solid;
+      border-width:2px;
+  }
+
+  .patchOne{
+    text-align: center;
+    padding: 1% 0;
+  }
+
   /*waffleBotSpecific*/
   .waffl3ObjLeft{
     border-left-color: transparent !important;
