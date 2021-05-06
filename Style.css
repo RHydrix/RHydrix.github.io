@@ -100,6 +100,47 @@ html {
     width: 90%;
     display:block;
   }
+
+/*iframe stuff*/
+.itemLine {
+  height: 100%;
+  display: inline-block;
+}
+
+.sizeDisplayO{
+  margin:5px;
+  justify-content: center;
+  padding:5px 10px;
+  height: 75%;
+}
+
+.itemPadO{
+  text-align:center;
+  height: 50%;
+}
+/*scrollbar*/
+/* width */
+::-webkit-scrollbar {
+  width: 1.3%;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #292929;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 100px;
+}
+
 /*else*/
 body, h1, h2, h3, h4, h5, h6 {
   font-family: "Ubuntu", sans-serif
@@ -764,7 +805,7 @@ adsf
 
 /* ===margin=== */
 .objMargin {
-  margin: 16px !important
+  margin: 20px !important
 }
 
 .objAdvMargin {
