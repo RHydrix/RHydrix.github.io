@@ -455,7 +455,12 @@ adsf
 .itemColor-text-OBlue, .itemColor-text-OBlue:hover {
   color: #2B65EC !important;
 }
-
+.itemColor-text-spring, .itemColor-text-spring:hover {
+  color: #32CD32 !important;
+}
+.itemColor-text-Gold, .itemColor-text-Gold:hover {
+  color: #B8860B !important;
+}
 .itemColor-dark-grey, .itemColor-hover-dark-grey:hover, .itemColor-dark-gray, .itemColor-hover-dark-gray:hover {
   color: #fff !important;
   background-color: #616161 !important
