@@ -11,17 +11,12 @@
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="objSidebar objBar-block objSmall objHide-small objCenter">
   <!-- Avatar image in top left corner -->
-  <img src="./imgs/ProfileImg.png" id="imgProfile">
+  <img src="./imgs/linkbridge.png" id="imgProfile">
   <!--img by Luminaros https://twitter.com/luminaros-->
-  <a href="" class="objBar-item objButton objPadding-large itemColor-black">
+  <a href="index.html" class="objBar-item objButton objPadding-large itemColor-black">
     <i class="fas fa-home objXxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#WafflesBot" class="objBar-item objButton objPadding-large itemColor-hover-black">
-    <i class="fas fa-microchip objXxlarge"></i>
-    <p>WAFFLESBOT</p>
-  </a>
-  <a href="about.html" class="objBar-item objButton objPadding-large itemColor-hover-black">
+    <p>HOME</p>  </a>
+  <a href="#about" class="objBar-item objButton objPadding-large itemColor-hover-black">
     <i class="fas fa-user objXxlarge"></i>
     <p>ABOUT</p>
   </a>
@@ -43,8 +38,7 @@
 <div class="objTop objHide-large objHide-medium" id="myNavbar">
   <div class="objBar itemColor-darkMode objOpacity objHover-opacity-off objCenter objSmall">
     <a href="#" class="objBar-item objButton" style="width:25% !important">HOME</a>
-    <a href="#WafflesBot" class="objBar-item objButton" style="width:25% !important">WAFFLESBOT</a>
-    <a href="about.html" class="objBar-item objButton" style="width:25% !important">ABOUT</a>
+    <a href="#about" class="objBar-item objButton" style="width:25% !important">ABOUT</a>
     <a href="files.html" class="objBar-item objButton" style="width:25% !important">FILES</a>
     <a href="gameslist.html" class="objBar-item objButton" style="width:25% !important">GAMES LIST</a>
     <a href="#contact" class="objBar-item objButton" style="width:25% !important">CONTACT</a>
@@ -71,13 +65,12 @@
   </header>
 
   <!-- About Section -->
-  <div class="objContent objJustify itemColor-text-grey objPadding-64" id="about">
-    <h2 class="itemColor-text-light-grey">Waffl3Development</h2>
+  <!--<div class="objContent objJustify itemColor-text-grey objPadding-64" id="about">
+    <h2 class="itemColor-text-light-grey">Thomas Holst</h2>
     <hr style="width:200px" class="objOpacity">
-    <p>What we do</p>
-    <h3 class="objPadding-16 itemColor-text-light-grey">Our Projects</h3>
-  </div>
-<!--
+    <p>Nothing here yet!
+    </p>
+    <h3 class="objPadding-16 itemColor-text-light-grey">My Skills</h3>
     <p class="objWide">WafflesBot with Nodejs & javascript</p>
 
     <div class="itemColor-white objRoundCorn">
@@ -100,7 +93,7 @@
       <div class="itemColor-dark-grey objBarRoundCorn" style="height:28px;width:45%"></div>
     </div><br>
 -->
-    <div class="objRow objCenter objPadding-16 objSection itemColor-light-grey objRoundCorn objContent">
+    <div class="objRow objCenter objPadding-16 objSection itemColor-light-grey objRoundCorn">
       <div class="obj-quarter objSection">
         <span class="objXlarge">2</span><br>
         Open Projects
@@ -113,18 +106,42 @@
         <span class="objXlarge">12</span><br>
         Projects Planned
       </div>
-      <div class="obj-quarter objSection">
+    <div class="obj-quarter objSection">
         <span class="objXlarge">2</span><br>
         Projects In Use
       </div>
     </div>
-<div class="objCenter">
-    <button class="objButton itemColor-light-grey itemColor-text-black itemColor-hover-dark-grey itemColor-hover-text-white objPadding-large objSection objRoundCorn">
-      <i class="fa fa-external-link-square-alt"></i> Projects
-    </button>
-</div>
-    <!-- Grid for wafflesBot -->
-<div class="objPadding-32 objContent" id="WafflesBot">
+
+    <div class="objCenter">
+    <!-- original img by Lonche Thrash https://twitter.com/TracingVibes-->
+          <form action="https://github.com/Waffl3Development/RemoteDesktopRun">
+            <button class="itemColor-white itemColor-hover-dark-grey itemColor-text-black itemColor-hover-white objRoundCorn objBlock objButton waffButtons">
+              <i class="fa fa-download"></i> Remote-Desktop Run
+            </button>
+          </form>
+          <form action="https://github.com/Waffl3Development/AutoHotKey-disableNumPad">
+            <button class="itemColor-white itemColor-hover-dark-grey itemColor-text-black itemColor-hover-white objRoundCorn objBlock objButton waffButtons">
+              <i class="fa fa-download"></i> Download AHK-disableNumPad
+            </button>
+          </form>
+          <form action="https://github.com/Waffl3Development/activateWindows">
+            <button class="itemColor-white itemColor-hover-dark-grey itemColor-text-black itemColor-hover-white objRoundCorn objBlock objButton waffButtons">
+              <i class="fa fa-download"></i> activate-Windows
+            </button>
+          </form>
+          <form action="https://github.com/Waffl3Development/unattendInstall">
+            <button class="itemColor-white itemColor-hover-dark-grey itemColor-text-black itemColor-hover-white objRoundCorn objBlock objButton waffButtons">
+              <i class="fa fa-download"></i> Download AHK-disableNumPad
+            </button>
+          </form>
+        <!--  <form action="status.html">
+            <button class="itemColor-white itemColor-hover-dark-grey itemColor-text-black itemColor-hover-white objRoundCorn objBlock objButton waffButtons">
+              <i class="fa fa-download"></i> Download AHK-disableNumPad
+            </button>
+          </form>-->
+    </div>
+    <!-- Grid for wafflesBot --><!--
+<div class="objPadding-64 objContent" id="WafflesBot">
     <h2 class="itemColor-text-light-grey">WafflesBot</h2>
     <hr style="width:200px" class="objOpacity">
 
@@ -135,38 +152,46 @@
           <li class="objPadding-16">Virtual Online Server - 5$/month or 60$/year</li>
           <li class="objPadding-16">Domain name for website - 1$/month or 12$/month</li>
           <li class="objPadding-16">Hosting Service - Free via Github Pages</li>
-          <li class="objPadding-16">--</li>
+          <li class="objPadding-16">- -</li>
           <li class="objPadding-16">
             <h2>$ 6</h2>
             <span class="objOpacity">total per month</span>
           </li>
           <li class="itemColor-white objPadding-24 objListBottomRoundCorn">
-            <form><button class="objButton itemColor-white objPadding-large itemColor-hover-black objRoundCorn">Consider Donating!</button></form>
+            <button class="objButton itemColor-white objPadding-large itemColor-hover-black objRoundCorn">Consider Donating!</button>
           </li>
         </ul>
       </div>
     </div>
-</div>
-<div class="wrapper objContent ">
-    <div class="objLeft waffl3Obj waffl3ObjRight">
-      <iframe src="https://discord.com/widget?id=694407255193419806&theme=dark" width="100%" height="100%" loading="lazy" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
+<span>
+    <div class="objLeft obj-half objPadRight">
+      <iframe src="https://discord.com/widget?id=694407255193419806&theme=dark" width="100%" height="527" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
     </div>
-    <div class="objRight waffl3Obj waffl3ObjLeft ">
-          <img src="./imgs/Hexa.png"  alt="hexa" id="hexa" class="objImage objRoundCorn"/>
-<!-- original img by Lonche Thrash https://twitter.com/TracingVibes-->
-          <form action="status.html"><button class="itemColor-white itemColor-hover-dark-grey itemColor-text-black itemColor-hover-white objRoundCorn objBlock objButton waffButtons">WafflesBot Status and Changelog</button></form>
-          <form action="cplugin.html"><button class="itemColor-white itemColor-hover-dark-grey itemColor-text-black itemColor-hover-white objRoundCorn objBlock objButton waffButtons">WafflesBot Community Plugins</button></form>
+    <div class="objRight obj-half objPadLeft">
+        <img src="./imgs/Hexa.png" alt="hexa" id="hexa" class="objImage objRoundCorn"/>
+<!- - original img by Lonche Thrash https://twitter.com/TracingVibes- ->
+        <br />
+        <div class="itemColor-white itemColor-hover-dark-grey itemColor-text-black itemColor-hover-white objRoundCorn objBlock objButton">
+          <href class="">WafflesBot Status</href>
+        </div>
     </div>
-    <!-- End Grid/Pricing tables -->
-</div>
+</span>
+
+</div>-->
+<span class="objAdvMargin"></span>
+
   <!-- Portfolio Section -->
-<!-- <div class="objPadding-64 objContent" id="GamesList">
+  <!--
+  <div class="objPadding-64 objContent" id="GamesList">
     <h2 class="itemColor-text-light-grey objPadBottom">Games List</h2>
     <hr style="width:200px" class="objOpacity"></hr>
     <div>
       <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQflk2UQXofUgUg9_R1q5rgkeNTG05cKpfFGXokeucOilUyvvDESjyXAlKbycE7R3fAUfznd0z66op6/pubhtml?widget=true&amp;headers=false" id="GameList" class="objBar-block objRoundCorn"></iframe>
     </div>
   </div>-->
+<span></span>
+  <!-- Contact Section -->
   <div class="objSmall objHide-small">
   <div class="objPadding-64 objContent itemColor-text-grey" id="contact">
     <h2 class="itemColor-text-light-grey">Contact Me</h2>
@@ -196,7 +221,7 @@
   <br />
   <br />
   <br />
-  <br />
+
     <!-- Footer -->
  <footer class="objContent objPadding-64 itemColor-text-grey objXlarge objCenter">
     <i class="fab fa-instagram objHover-opacity"></i>
@@ -206,6 +231,9 @@
 
   <!-- End footer -->
 </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
 
 </body>
 </html>
