@@ -293,13 +293,21 @@ hr {
 }
 
 /* ===content=== */
-.objContent, .objAuto {
+.objContent, .objContentMax,.objAuto {
   margin-left: auto;
   margin-right: auto;
 }
 
 .objContent {
-  max-width: 980px
+  max-width: 85%
+}
+
+.objContentMax {
+  max-width: 100%
+}
+
+.objContentQuarter {
+  max-width: 25%
 }
 
 /* ===sidebar=== */
