@@ -4,54 +4,66 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 <link rel="stylesheet" href="Style.css" />
-<body class="itemColor-darkMode">
+<script src="script.js"></script>
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="objSidebar objBar-block objSmall objHide-small objCenter">
+<nav class="objSidebar objBar-block objSmall objHide-small objCenter objRoundCorn" id="sidebar">
   <!-- Avatar image in top left corner -->
   <img src="./imgs/ProfileImg.png" id="imgProfile">
   <!--img by Luminaros https://twitter.com/luminaros-->
-  <a href="index.html" class="objBar-item objButton objPadding-large itemColor-black">
+  <a href="index.html" class="objBar-item objButton objPadding-large itemColor-dark-grey">
     <i class="fas fa-home objXxlarge"></i>
-    <p>HOME</p>  </a>
-  <a href="#about" class="objBar-item objButton objPadding-large itemColor-hover-black">
+    <p>HOME</p>
+  </a>
+  <a href="botInfo.html" class="objBar-item objButton objPadding-large itemColor-hover-dark-grey">
+    <i class="fas fa-microchip objXxlarge"></i>
+    <p>WAFFL3SBOT</p>
+  </a>
+  <a href="support.html" class="objBar-item objButton objPadding-large itemColor-hover-dark-grey">
     <i class="fas fa-user objXxlarge"></i>
     <p>ABOUT</p>
   </a>
-  <a href="files.html" class="objBar-item objButton objPadding-large itemColor-hover-black">
-    <i class="fas fa-archive objXxlarge"></i>
-    <p>WAFFL3DEV FILES</p>
+  <a href="about.html" class="objBar-item objButton objPadding-large itemColor-hover-dark-grey">
+    <i class="fas fa-user objXxlarge"></i>
+    <p>ABOUT</p>
   </a>
-  <a href="gameslist.html" class="objBar-item objButton objPadding-large itemColor-hover-black">
-    <i class="fas fa-scroll objXxlarge"></i>
-    <p>GAMES LIST</p>
-  </a>
-  <a href="#contact" class="objBar-item objButton objPadding-large itemColor-hover-black">
+  <a href="#contact" class="objBar-item objButton objPadding-large itemColor-hover-dark-grey">
     <i class="fas fa-envelope objXxlarge"></i>
     <p>CONTACT</p>
   </a>
+  <a class="objBar-item objButton objPadding-large itemColor-hover-dark-grey" id="off" onclick="lighton()">
+    <i class="fas fa-toggle-off objXxlarge"></i>
+  </a>
+  <a class="objBar-item objButton objPadding-large itemColor-hover-dark-grey" id="on" style='display:none' onclick="darkon()">
+    <i class="fas fa-toggle-on objXxlarge"></i>
 </nav>
 
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="objTop objHide-large objHide-medium" id="myNavbar">
-  <div class="objBar itemColor-darkMode objOpacity objHover-opacity-off objCenter objSmall">
-    <a href="#" class="objBar-item objButton" style="width:25% !important">HOME</a>
-    <a href="#about" class="objBar-item objButton" style="width:25% !important">ABOUT</a>
-    <a href="files.html" class="objBar-item objButton" style="width:25% !important">FILES</a>
-    <a href="gameslist.html" class="objBar-item objButton" style="width:25% !important">GAMES LIST</a>
-    <a href="#contact" class="objBar-item objButton" style="width:25% !important">CONTACT</a>
+  <div class="objBar objOpacity objHover-opacity-off objCenter objSmall">
+    <a href="index.html" class="objBar-item objButton" style="width:25% !important"><i class="fas fa-home"></i> HOME</a>
+    <a href="botInfo.html" class="objBar-item objButton" style="width:25% !important"><i class="fas fa-microchip"></i> WAFFL3SBOT</a>
+    <!--<a href="about.html" class="objBar-item objButton" style="width:25% !important"><i class="fas fa-user"></i> ABOUT</a>-->
+    <a href="#contact" class="objBar-item objButton" style="width:25% !important"><i class="fas fa-envelope"></i> CONTACT</a>
+  </div>
+</div>
+
+<div class="objTop objHide-large objHide-medium objCenter" id="myNavbar2">
+  <div class="objBar objOpacity objHover-opacity-off objCenter objSmall">
+    <a class="objBar-item objButton" style="width:25% !important" id="off" onclick="lighton()"><i class="fas fa-lightbulb"></i></a>
+    <a class="objBar-item objButton" id="on" style="display:none !important" onclick="darkon()"><i class="fas fa-lightbulb"></i></a>
   </div>
 </div>
 
 <!-- Page Content -->
 <div class="objPadding-large" id="main">
   <!-- Header/Home -->
-  <header class="objContainer objPadding-32 objCenter itemColor-darkMode" id="home">
+  <header class="objContainer objPadding-32 objCenter " id="home">
     <div class="objHide-small">
     <h1 class="objJumbo">Waffl3Development</h1>
-    <p>Python, C++, and Programmer of WafflesBot.</p>
+    <p>Javascript, NodeJS, and Programmer of Waffl3sBot.</p>
     <img src="./imgs/colorKeys.jpg" alt="colorKeys" class="objImage" id="colorKeys">
     <!--img by Marius Niveri https://unsplash.com/@m4r1vs-->
   </div>
@@ -66,31 +78,34 @@
 
   <!-- About Section -->
   <div class="objContent objJustify itemColor-text-grey objPadding-64" id="about">
-    <h2 class="itemColor-text-light-grey">Thomas Holst</h2>
+    <h2>Thomas Holst</h2>
     <hr style="width:200px" class="objOpacity">
     <p>Nothing here yet!
     </p>
     <h3 class="objPadding-16 itemColor-text-light-grey">My Skills</h3>
     <p class="objWide">WafflesBot with Nodejs & javascript</p>
-
-    <div class="itemColor-white objRoundCorn">
-      <div class="itemColor-dark-grey objBarRoundCorn" style="height:28px;width:80%"></div>
+    <div class="objRoundCorn gen-objBar-border">
+      <div class="itemColor-white">
+        <div class="itemColor-dark-grey" style="height:28px;width:80%"></div>
+      </div>
     </div>
     <p class="objWide">HTML & CSS</p>
-    <div class="itemColor-white objRoundCorn">
-      <div class="itemColor-dark-grey objBarRoundCorn" style="height:28px;width:70%"></div>
+    <div class="objRoundCorn gen-objBar-border">
+      <div class="itemColor-white">
+        <div class="itemColor-dark-grey" style="height:28px;width:70%"></div>
+      </div>
     </div>
     <p class="objWide">Python</p>
-    <div class="itemColor-white objRoundCorn">
-      <div class="itemColor-dark-grey objBarRoundCorn" style="height:28px;width:55%"></div>
+    <div class="itemColor-white objRoundCorn gen-objBar-border">
+      <div class="itemColor-dark-grey" style="height:28px;width:55%"></div>
     </div>
     <p class="objWide">PHP with MySQL</p>
-    <div class="itemColor-white objRoundCorn">
-      <div class="itemColor-dark-grey objBarRoundCorn" style="height:28px;width:65%"></div>
+    <div class="itemColor-white objRoundCorn gen-objBar-border">
+      <div class="itemColor-dark-grey" style="height:28px;width:65%"></div>
     </div>
     <p class="objWide">C++</p>
-    <div class="itemColor-white objRoundCorn">
-      <div class="itemColor-dark-grey objBarRoundCorn" style="height:28px;width:45%"></div>
+    <div class="itemColor-white objRoundCorn gen-objBar-border">
+      <div class="itemColor-dark-grey" style="height:28px;width:45%"></div>
     </div><br>
 
     <div class="objRow objCenter objPadding-16 objSection itemColor-light-grey objRoundCorn">
@@ -116,79 +131,31 @@
       <i class="fa fa-download"></i> Download Resume
     </button>
 </div>
-    <!-- Grid for wafflesBot --><!--
-<div class="objPadding-64 objContent" id="WafflesBot">
-    <h2 class="itemColor-text-light-grey">WafflesBot</h2>
-    <hr style="width:200px" class="objOpacity">
-
-    <div class="objRowPadding" id="listObjectPricing">
-      <div class="objMargin-bottom">
-        <ul class="objUl itemColor-white objCenter objOpacity objHover-opacity-off objRoundCorn">
-          <li class="itemColor-dark-grey objXlarge objPadding-32 objListTopRoundCorn">Cost of Maintenance </li>
-          <li class="objPadding-16">Virtual Online Server - 5$/month or 60$/year</li>
-          <li class="objPadding-16">Domain name for website - 1$/month or 12$/month</li>
-          <li class="objPadding-16">Hosting Service - Free via Github Pages</li>
-          <li class="objPadding-16">- -</li>
-          <li class="objPadding-16">
-            <h2>$ 6</h2>
-            <span class="objOpacity">total per month</span>
-          </li>
-          <li class="itemColor-white objPadding-24 objListBottomRoundCorn">
-            <button class="objButton itemColor-white objPadding-large itemColor-hover-black objRoundCorn">Consider Donating!</button>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-<span>
-    <div class="objLeft obj-half objPadRight">
-      <iframe src="https://discord.com/widget?id=694407255193419806&theme=dark" width="100%" height="527" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-    </div>
-    <div class="objRight obj-half objPadLeft">
-        <img src="./imgs/Hexa.png" alt="hexa" id="hexa" class="objImage objRoundCorn"/>
-<!- - original img by Lonche Thrash https://twitter.com/TracingVibes- ->
-        <br />
-        <div class="itemColor-white itemColor-hover-dark-grey itemColor-text-black itemColor-hover-white objRoundCorn objBlock objButton">
-          <href class="">WafflesBot Status</href>
-        </div>
-    </div>
-</span>
-
-</div>-->
 <span class="objAdvMargin"></span>
 
-  <!-- Portfolio Section -->
-  <!--
-  <div class="objPadding-64 objContent" id="GamesList">
-    <h2 class="itemColor-text-light-grey objPadBottom">Games List</h2>
-    <hr style="width:200px" class="objOpacity"></hr>
-    <div>
-      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQflk2UQXofUgUg9_R1q5rgkeNTG05cKpfFGXokeucOilUyvvDESjyXAlKbycE7R3fAUfznd0z66op6/pubhtml?widget=true&amp;headers=false" id="GameList" class="objBar-block objRoundCorn"></iframe>
-    </div>
-  </div>-->
 <span></span>
   <!-- Contact Section -->
   <div class="objSmall objHide-small">
-  <div class="objPadding-64 objContent itemColor-text-grey" id="contact">
-    <h2 class="itemColor-text-light-grey">Contact Me</h2>
+  <div class="objPadding-64 objContent itemColor-text-grey">
+    <h2 id="contact">Contact Me</h2>
     <hr class="objOpacity">
   <!--width:200px-->
-      <div class="itemColor-darkMode itemColor-hover-white itemColor-text-white itemColor-hover-black objXxlarge objRoundCorn objLeft objBlock"><span><i class="fas fa-phone fa-fw objMargin"></i></span><span class="objRight objMargin">(216)-798-8279</span></div>
-      <div class="itemColor-darkMode itemColor-hover-white itemColor-text-white itemColor-hover-black objXxlarge objRoundCorn objLeft objBlock"><span><i class="fas fa-map-marker fa-fw objMargin"></i></span><span class="objRight objMargin">Cleveland OH, United States</span></div>
-      <div class="itemColor-darkMode itemColor-hover-white itemColor-text-white itemColor-hover-black objXxlarge objRoundCorn objLeft objBlock"><span><i class="fas fa-envelope fa-fw objMargin"></i></span><span class="objRight objMargin">tholst371@gmail.com</span></div>
+      <div class="contact objSmMargin objXlarge objRoundCorn objLeft objBlock itemColor-hover-dark-grey"><span><i class="fas fa-phone fa-fw objMargin"></i></span><span class="objRight objMargin">(216)-798-8279</span></div>
+      <div class="contact objSmMargin objXlarge objRoundCorn objLeft objBlock itemColor-hover-dark-grey"><span><i class="fas fa-map-marker fa-fw objMargin"></i></span><span class="objRight objMargin">Cleveland OH, United States</span></div>
+      <div class="contact objSmMargin objXlarge objRoundCorn objLeft objBlock itemColor-hover-dark-grey"><span><i class="fas fa-envelope fa-fw objMargin"></i></span><span class="objRight objMargin">tholst371@gmail.com</span></div>
     <hr class="objOpacity"><br>
   <!-- End Contact Section -->
   </div>
   </div>
   <!--small-->
   <div class="objHide-large objHide-medium">
-  <div class="objPadding-64 objContent itemColor-text-grey" id="contact">
-    <h2 class="itemColor-text-light-grey">Contact Me</h2>
+  <div class="objPadding-64 objContent itemColor-text-grey">
+    <h2>Contact Me</h2>
     <hr class="objOpacity">
   <!--width:200px-->
-      <div class="itemColor-darkMode itemColor-hover-white itemColor-text-white itemColor-hover-black objLarge objRoundCorn objLeft objBlock"><span><i class="fas fa-phone fa-fw objMargin"></i></span><span class="objRight objMargin">(216)-798-8279</span></div>
-      <div class="itemColor-darkMode itemColor-hover-white itemColor-text-white itemColor-hover-black objLarge objRoundCorn objLeft objBlock"><span><i class="fas fa-map-marker fa-fw objMargin"></span></i><span class="objRight objMargin">Cleveland OH, United States</span></div>
-      <div class="itemColor-darkMode itemColor-hover-white itemColor-text-white itemColor-hover-black objLarge objRoundCorn objLeft objBlock"><span><i class="fas fa-envelope fa-fw objMargin"></i></span><span class="objRight objMargin">tholst371@gmail.com</span></div>
+      <div class="contact objSmMargin objLarge objRoundCorn objLeft objBlock itemColor-hover-dark-grey"><span><i class="fas fa-phone fa-fw objMargin"></i></span><span class="objRight objMargin">(216)-798-8279</span></div>
+      <div class="contact objSmMargin objLarge objRoundCorn objLeft objBlock itemColor-hover-dark-grey"><span><i class="fas fa-map-marker fa-fw objMargin"></span></i><span class="objRight objMargin">Cleveland OH, United States</span></div>
+      <div class="contact objSmMargin objLarge objRoundCorn objLeft objBlock itemColor-hover-dark-grey"><span><i class="fas fa-envelope fa-fw objMargin"></i></span><span class="objRight objMargin">tholst371@gmail.com</span></div>
     <hr class="objOpacity"><br>
   <!-- End Contact Section -->
   </div>

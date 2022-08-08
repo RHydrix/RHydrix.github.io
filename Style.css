@@ -1,8 +1,9 @@
 /*extracted and modified from w3.css which you can get here:https://www.w3schools.com/w3css/4/w3.css*/
 /*Modified by changing css tag names and using only the tags that are needed for waffl3dev.co.uk index file */
 /* ===main=== */
-html{
-  background-color: #000
+body {
+  color: #000 !important;
+  background-color: #fff !important;
 }
 html {
   box-sizing: border-box;
@@ -207,12 +208,41 @@ hr {
   height: 0;
   overflow: visible
 }
+
 .itemColor-border-black{
   border-color: #000 !important;
   border-width: 2px !important;
   border-style:solid !important;
 }
 
+/* ===darkMode===
+.itemColor-darkMode, .itemColor-darkMode:hover{
+  color: #fff;
+  background-color: #121212
+}*/
+.itemColor-darkMode, .itemColor-darkMode:hover{
+  color: #fff !important;
+  background-color: #121212 !important;
+}
+.sidebar-darkMode, .sidebar-darkMode:hover{
+  background: #fff !important;
+  background-image: initial !important;
+  background-color: fff !important;
+  color: #000 !important;
+  border-color: #fff !important;
+  border-style: solid !important;
+}
+
+.contact-darkMode, .contact-darkMode:hover{
+  background-color: #fff !important;
+  color: #000 !important;
+  border-color: #fff !important;
+  border-style: solid;
+}
+.progBar-darkMode, .progBar-darkMode:hover{
+  border-color: #fff !important;
+  border-style: solid;
+}
 /* ===other=== */
 .objRoundCorn{
   border-radius: 5px;
@@ -293,24 +323,33 @@ hr {
 }
 
 /* ===content=== */
-.objContent, .objAuto {
+.objContent, .objContentMax,.objAuto {
   margin-left: auto;
   margin-right: auto;
 }
 
 .objContent {
-  max-width: 980px
+  max-width: 85%
+}
+
+.objContentMax {
+  max-width: 100%
+}
+
+.objContentQuarter {
+  max-width: 25%
 }
 
 /* ===sidebar=== */
 .objSidebar {
   width: 120px;
   background: #222;
-
   background-image: initial;
   background-color: rgb(26,28,29);
-
-  height: 100%;
+  border-color: rgb(26,28,29);
+  border-style: solid;
+  color: #fff;
+  height: 98.5%;
   position: fixed !important;
   z-index:1;
   overflow: auto;
@@ -348,6 +387,11 @@ hr {
   border: none;
   display: block;
   outline: 0
+}
+
+.gen-objBar-border{
+  border-color: rgb(26,28,29);
+  border-style: solid;
 }
 
 .objBar .objDropdown-hover, .objBar .objDropdown-click {
@@ -406,7 +450,7 @@ hr {
 .objCenter {
   text-align: center !important
 }
-adsf
+
 /* ===mobile=== */
 .objMobile {
   display: block;
@@ -417,14 +461,17 @@ adsf
   text-align: center
 }
 
+/*===contact===*/
+.contact, .contact:hover{
+  background-color: rgb(26,28,29);
+  color: #fff;
+  border-color: rgb(26,28,29);
+  border-style: solid;
+}
 /* ===color=== */
 .btnColor-hover{
   border-color: #9e9e9e;
   border-style: solid
-}
-.itemColor-darkMode, .itemColor-darkMode:hover{
-  color: #fff;
-  background-color: #121212
 }
 
 .itemColor-black, .itemColor-hover-black:hover {
@@ -434,8 +481,9 @@ adsf
 
 .itemColor-grey, .itemColor-hover-grey:hover, .itemColor-gray, .itemColor-hover-gray:hover {
   color: #000 !important;
-  background-color: #9e9e9e !important
+  background-color: #707070 !important
 }
+
 
 .itemColor-light-grey, .itemColor-hover-light-grey:hover, .itemColor-light-gray, .itemColor-hover-light-gray:hover {
   color: #000 !important;
@@ -463,12 +511,12 @@ adsf
 }
 .itemColor-dark-grey, .itemColor-hover-dark-grey:hover, .itemColor-dark-gray, .itemColor-hover-dark-gray:hover {
   color: #fff !important;
-  background-color: #616161 !important
+  background-color: #2e2e2e !important
 }
 
 .itemColor-gold, .itemColor-hover-gold:hover{
   background-color: #B8860B !important;
-    color: #fff !important;
+  color: #fff !important;
 }
 .itemColor-spring, .itemColor-hover-spring:hover{
   background-color: #32CD32 !important;
@@ -645,7 +693,6 @@ adsf
 
 .objDropdown-hover:hover>.objButton:first-child, .objDropdown-click:hover>.objButton:first-child {
   background-color: #ccc;
-  color: #000
 }
 
 /* ===hover=== */
@@ -809,6 +856,10 @@ adsf
 }
 
 /* ===margin=== */
+.objSmMargin{
+    margin: 5px !important;
+}
+
 .objMargin {
   margin: 20px !important
 }
