@@ -10,97 +10,102 @@ html {
   -webkit-text-size-adjust: 100%
 }
 /*trouble shooting*/
-  .red{
-    border-color: red;
-    border-style: dotted;
-  }
-  .green{
-    border-color: green;
-    border-style: dotted;
-  }
-  .blue{
-    border-color: blue;
-    border-style: dotted;
-  }
-  .yellow{
-    border-color: yellow;
-    border-style: dotted;
-  }
-  .purple{
-    border-color: purple;
-    border-style: dotted;
-  }
+.red{
+  border-color: red;
+  border-style: dotted;
+}
+.green{
+  border-color: green;
+  border-style: dotted;
+}
+.blue{
+  border-color: blue;
+  border-style: dotted;
+}
+.yellow{
+  border-color: yellow;
+  border-style: dotted;
+}
+.purple{
+  border-color: purple;
+  border-style: dotted;
+}
 
   /*changelogtop*/
-  .chng{
-      margin: 0;
-      padding: 0;
-      border-color: #292929;
-      border-style: solid;
-      border-width:2px;
-  }
+.chng{
+  margin: 0;
+  padding: 0;
+  border-color: #292929;
+  border-style: solid;
+  border-width:2px;
+}
 
-  .patchOne{
-    text-align: center;
-    padding: 1% 0;
-  }
+.patchOne{
+  text-align: center;
+  padding: 1% 0;
+}
 
   /*waffleBotSpecific*/
-  .waffl3ObjLeft{
-    border-left-color: transparent !important;
-    border-left-style: solid;
-    border-left-width: 8px
-  }
-  .waffl3ObjRight{
-    border-right-color: transparent !important;
-    border-right-style: solid;
-    border-right-width: 8px
-  }
-  .waffl3Obj{
-    width: 49.99999%;
-    height: inherit;
-    display: table-cell;
-  }
-  .wrapper{
-    display: table;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    padding : 2px
-  }
+.waffl3ObjLeft{
+  border-left-color: transparent !important;
+  border-left-style: solid;
+  border-left-width: 8px
+}
+.waffl3ObjRight{
+  border-right-color: transparent !important;
+  border-right-style: solid;
+  border-right-width: 8px
+}
+.waffl3Obj{
+  width: 49.99999%;
+  height: inherit;
+  display: table-cell;
+}
+.wrapper{
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding : 2px
+}
 
-  .waffl3ObjAlt{
+.waffl3ObjAlt{
   width:49.99999%;
   height:auto;
   text-align: center;
-  }
-  .waffButtons{
-    margin:4px 0 !important;
-  }
+}
+.waffButtons{
+  margin:4px 0 !important;
+}
 
-  .waffl3TextWrap{
-    word-wrap: break-word !important;
-    overflow-wrap: break-word !important;
-    hyphens: auto;
-    white-space: pre-wrap !important;
-  }
+.waffl3TextWrap{
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  hyphens: auto;
+  white-space: pre-wrap !important;
+}
 
-  .waffl3TextPad{
-    display: inline-block;
-    vertical-align: middle;
-    text-decoration: none;
-    display: inline-block !important;
-    color: inherit;
-    background-color: inherit;
-    text-align: center;
-    padding: 8px 16px;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
-  }
-  .waffl3Block{
-    width: 90%;
-    display:block;
-  }
+.waffl3TextPad{
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  display: inline-block !important;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  padding: 8px 16px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+}
+.waffl3Block{
+  width: 90%;
+  display:block;
+}
+
+.waffl3BlockHalf{
+  width: 50%;
+  display: block;
+}
 
 /*iframe stuff*/
 .itemLine {
@@ -312,7 +317,11 @@ hr {
   max-width: 100%;
   height: auto
 }
-#GameList {
+.objImageMed{
+  max-width: 85%;
+  height: auto
+}
+#calendar {
   width: 100%;
   height: 1000px;
   border: none;
