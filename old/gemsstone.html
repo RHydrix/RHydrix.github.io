@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<title>Waffl3Development Apps and Information</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Style.css" />
+<script src="script.js"></script>
+
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="objSidebar objBar-block objSmall objHide-small objCenter objRoundCorn" id="sidebar">
+  <!-- Avatar image in top left corner -->
+  <img src="./imgs/ProfileImg.png" id="imgProfile">
+  <a href="#" class="objBar-item objButton objPadding-large itemColor-dark-grey">
+    <i class="fas fa-home objXlarge"></i>
+    <p>HOME</p>
+  </a>
+  <!--<a href="botInfo.html" class="objBar-item objButton objPadding-large itemColor-hover-dark-grey">
+    <i class="fas fa-microchip objXxlarge"></i>
+    <p>WAFFL3SBOT</p>
+  </a>-->
+  <a href="support.html" class="objBar-item objButton objPadding-large itemColor-hover-dark-grey">
+    <i class="fas fa-headset objXlarge"></i>
+    <p>TECH SUPPORT</p>
+  </a>
+  <a href="about.html" class="objBar-item objButton objPadding-large itemColor-hover-dark-grey">
+    <i class="fas fa-user objXlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#contact" class="objBar-item objButton objPadding-large itemColor-hover-dark-grey">
+    <i class="fas fa-envelope objXlarge"></i>
+    <p>CONTACT</p>
+  </a>
+  <a class="objBar-item objButton objPadding-large itemColor-hover-dark-grey" id="off" onclick="lighton()">
+    <i class="fas fa-toggle-off objXlarge"></i>
+  </a>
+  <a class="objBar-item objButton objPadding-large itemColor-hover-dark-grey" id="on" style='display:none' onclick="darkon()">
+    <i class="fas fa-toggle-on objXlarge"></i>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="objTop objHide-large objHide-medium" id="myNavbar">
+  <div class="objBar objOpacity objHover-opacity-off objCenter objSmall">
+    <a href="#" class="objBar-item objButton" style="width:25% !important"><i class="fas fa-home"></i> HOME</a>
+    <!--<a href="botInfo.html" class="objBar-item objButton" style="width:25% !important"><i class="fas fa-microchip"></i> WAFFL3SBOT</a>-->
+    <a href="support.html" class="objBar-item objButton" style="width:25% !important"><i class="fas fa-headset"></i> SUPPORT</a>
+    <a href="about.html" class="objBar-item objButton" style="width:25% !important"><i class="fas fa-user"></i> ABOUT</a>
+    <a href="#contact" class="objBar-item objButton" style="width:25% !important"><i class="fas fa-envelope"></i> CONTACT</a>
+  </div>
+</div>
+
+<div class="objTop objHide-large objHide-medium objCenter" id="myNavbar2">
+  <div class="objBar objOpacity objHover-opacity-off objCenter objSmall">
+    <a class="objBar-item objButton" style="width:25% !important" id="off" onclick="lighton()"><i class="fas fa-lightbulb"></i></a>
+    <a class="objBar-item objButton" id="on" style="display:none !important" onclick="darkon()"><i class="fas fa-lightbulb"></i></a>
+  </div>
+</div>
+
+<!-- Page Content -->
+
+<div class="objPadding-large" id="main">
+  <!-- About Section -->
+
+  <div class="objSmall objHide-small">
+  <div class="objPadding-64 objContent itemColor-text-grey">
+    <h2 id="contact">Contact Me</h2>
+    <hr class="objOpacity">
+  <!--width:200px-->
+      <div class="contact objSmMargin objXlarge objRoundCorn objLeft objBlock itemColor-hover-dark-grey"><span><i class="fas fa-phone fa-fw objMargin"></i></span><span class="objRight objMargin">(216)-798-8279</span></div>
+      <div class="contact objSmMargin objXlarge objRoundCorn objLeft objBlock itemColor-hover-dark-grey"><span><i class="fas fa-map-marker fa-fw objMargin"></i></span><span class="objRight objMargin">Cleveland OH, United States</span></div>
+      <div class="contact objSmMargin objXlarge objRoundCorn objLeft objBlock itemColor-hover-dark-grey"><span><i class="fas fa-envelope fa-fw objMargin"></i></span><span class="objRight objMargin">tholst371@gmail.com</span></div>
+    <hr class="objOpacity"><br>
+  <!-- End Contact Section -->
+  </div>
+  </div>
+  <!--small-->
+  <div class="objHide-large objHide-medium">
+  <div class="objPadding-64 objContent itemColor-text-grey">
+    <h2>Contact Me</h2>
+    <hr class="objOpacity">
+  <!--width:200px-->
+      <div class="contact objSmMargin objLarge objRoundCorn objLeft objBlock itemColor-hover-dark-grey"><span><i class="fas fa-phone fa-fw objMargin"></i></span><span class="objRight objMargin">(216)-798-8279</span></div>
+      <div class="contact objSmMargin objLarge objRoundCorn objLeft objBlock itemColor-hover-dark-grey"><span><i class="fas fa-map-marker fa-fw objMargin"></span></i><span class="objRight objMargin">Cleveland OH, United States</span></div>
+      <div class="contact objSmMargin objLarge objRoundCorn objLeft objBlock itemColor-hover-dark-grey"><span><i class="fas fa-envelope fa-fw objMargin"></i></span><span class="objRight objMargin">tholst371@gmail.com</span></div>
+    <hr class="objOpacity"><br>
+  <!-- End Contact Section -->
+  </div>
+  </div>
+
+  <br />
+  <br />
+  <br />
+  <br />
+    <!-- Footer -->
+ <footer class="objContent objPadding-64 itemColor-text-grey objXlarge objCenter">
+    <i class="fab fa-instagram objHover-opacity"></i>
+    <i class="fab fa-snapchat objHover-opacity"></i>
+    <i class="fab fa-twitter objHover-opacity"></i>
+    <i class="fab fa-linkedin objHover-opacity"></i>
+
+  <!-- End footer -->
+</footer>
+
+</body>
+</html>
+<!--original css file created by w3Schools found here: https://www.w3schools.com/w3css/ but only certain parts were moved to a new css file and changed for more generic and personal use -->

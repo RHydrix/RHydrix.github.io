@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<title>Relakye Hydrix</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Style.css" />
+<script src="script.js"></script>
+
+<body><div class="objBGImage test">
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="objSidebar objBar-block objSmall objHide-small objCenter objRoundCorn" id="sidebar">
+  <!-- Avatar image in top left corner -->
+  <img src="./imgs/ProfileImg.webp" id="imgProfile">
+  <!--img by Luminaros https://twitter.com/luminaros-->
+  <a href="#" class="objBar-item objButton objPadding-large itemColor-dark-grey">
+    <i class="fas fa-home objXxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="vtube.html" class="objBar-item objButton objPadding-large itemColor-hover-dark-grey">
+    <i class="fas fa-gamepad objXxlarge"></i>
+    <p>VTUBER</p>
+  </a>
+  <a href="gemsstone.html" class="objBar-item objButton objPadding-large itemColor-hover-dark-grey">
+    <i class="fas fa-gem objXxlarge"></i>
+    <p>GEMSSTONE</p>
+  </a>
+  <a href="about.html" class="objBar-item objButton objPadding-large itemColor-hover-dark-grey">
+    <i class="fas fa-user objXxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#contact" class="objBar-item objButton objPadding-large itemColor-hover-dark-grey">
+    <i class="fas fa-envelope objXxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+  <a class="objBar-item objButton objPadding-large itemColor-hover-dark-grey" id="off" onclick="lighton()">
+    <i class="fas fa-toggle-off objXxlarge"></i>
+  </a>
+  <a class="objBar-item objButton objPadding-large itemColor-hover-dark-grey" id="on" style='display:none' onclick="darkon()">
+    <i class="fas fa-toggle-on objXxlarge"></i>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="objTop objHide-large objHide-medium" id="myNavbar">
+  <div class="objBar objOpacity objHover-opacity-off objCenter objSmall">
+    <a href="#" class="objBar-item objButton" style="width:25% !important"><i class="fas fa-home"></i> HOME</a>
+    <a href="vtube.html" class="objBar-item objButton" style="width:25% !important"><i class="fas fa-gamepad"></i> VTUBER</a>
+    <a href="gemsstone.html" class="objBar-item objButton" style="width:25% !important"><i class="fas fa-gem"></i> GEMSSTONE</a>
+    <a href="about.html" class="objBar-item objButton" style="width:25% !important"><i class="fas fa-user"></i> ABOUT</a>
+    <a href="#contact" class="objBar-item objButton" style="width:25% !important"><i class="fas fa-envelope"></i> CONTACT</a>
+  </div>
+</div>
+
+<div class="objTop objHide-large objHide-medium objCenter" id="myNavbar2">
+  <div class="objBar objOpacity objHover-opacity-off objCenter objSmall">
+    <a class="objBar-item objButton" style="width:25% !important" id="off" onclick="lighton()"><i class="fas fa-lightbulb"></i></a>
+    <a class="objBar-item objButton" id="on" style="display:none !important" onclick="darkon()"><i class="fas fa-lightbulb"></i></a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="objPadding-large " id="main">
+  <!-- Header/Home -->
+    <div class="cleanBackground">
+    <header class=" objPadding-small objCenter" id="home">
+    <div class="objHide-small">
+    <h1 class="objXxlarge">Relakye Hydrix and Gemsstone</h1>
+    <p>An IT Vtuber Attempt</p>
+    <!--img by Marius Niveri https://unsplash.com/@m4r1vs-->
+  </div>
+</div>
+
+  <div class="objHide-large objHide-medium">
+    <h1 class="objLarge">Relakye Hydrix and Gemsstone</h1>
+    <p>An IT Vtuber Attempt</p>
+    <!--img by Marius Niveri https://unsplash.com/@m4r1vs-->
+  </div>
+  </header>
+
+  <div class="objSmall objHide-small">
+  <div class="objPadding-64 objContent itemColor-text-grey">
+    <h2 id="contact">Contact Me</h2>
+    <hr class="objOpacity">
+  <!--width:200px-->
+      <div class="contact objSmMargin objXlarge objRoundCorn objLeft objBlock itemColor-hover-dark-grey"><span><i class="fas fa-phone fa-fw objMargin"></i></span><span class="objRight objMargin">(216)-798-8279</span></div>
+      <div class="contact objSmMargin objXlarge objRoundCorn objLeft objBlock itemColor-hover-dark-grey"><span><i class="fas fa-envelope fa-fw objMargin"></i></span><span class="objRight objMargin">rhydrix@proton.me</span></div>
+    <hr class="objOpacity"><br>
+  <!-- End Contact Section -->
+  </div>
+  </div>
+  <!--small-->
+  <div class="objHide-large objHide-medium">
+  <div class="objPadding-64 objContent itemColor-text-grey">
+    <h2>Contact Me</h2>
+    <hr class="objOpacity">
+  <!--width:200px-->
+      <div class="contact objSmMargin objLarge objRoundCorn objLeft objBlock itemColor-hover-dark-grey"><span><i class="fas fa-phone fa-fw objMargin"></i></span><span class="objRight objMargin">(216)-798-8279</span></div>
+      <div class="contact objSmMargin objLarge objRoundCorn objLeft objBlock itemColor-hover-dark-grey"><span><i class="fas fa-envelope fa-fw objMargin"></i></span><span class="objRight objMargin">rhydrix@proton.me</span></div>
+    <hr class="objOpacity"><br>
+  <!-- End Contact Section -->
+  </div>
+  </div>
+
+  <br />
+  <br />
+  <br />
+  <br />
+    <!-- Footer -->
+ <footer class="objContent objPadding-64 itemColor-text-grey objXlarge objCenter">
+    <i class="fab fa-instagram objHover-opacity"></i>
+    <i class="fab fa-twitch objHover-opacity"></i>
+
+  <!-- End footer -->
+</footer>
+</div>
+</body>
+</html>
+<!--original css file created by w3Schools found here: https://www.w3schools.com/w3css/ but only certain parts were moved to a new css file and changed for more generic and personal use -->

@@ -1,15 +1,4 @@
-var file = "https://raw.githubusercontent.com/Waffl3Development/Waffl3Development.github.io/master/Status.json";
-
-function fileRead(){
-fetch(file)
-.then(response => response.text())
-.then(data => {
-  var node = document.getElementById('curStatus');
-  node.innerHTML = data;
-  });
-}
-
-function darkon(){
+/*function darkon(){
   var switchObjOn = document.getElementById('on');
   var switchObjOff = document.getElementById('off');
   var element = document.body;
@@ -52,4 +41,32 @@ function listLoop(array) {
   for(i=0; i<array.length; i++) {
     array[i].classList.toggle("contact-darkMode")
   }
+}
+*/
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "objBar" + " objCard" + " objAnimate-top" + " itemColour-white";
+    } else {
+        navbar.className = navbar.className.replace(" objCard objAnimate-top itemColour-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("nav");
+    if (x.className.indexOf("objShow") == -1) {
+        x.className += " objShow";
+    } else {
+        x.className = x.className.replace(" objShow", "");
+    }
 }

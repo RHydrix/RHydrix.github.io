@@ -1,154 +1,227 @@
 <!DOCTYPE html>
 <html>
-<title>Waffl3Development Apps and Information</title>
+<head>
+<title>RelakyeVT</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-<link rel="stylesheet" href="Style.css" />
+<link rel="stylesheet" href="Style.css" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
 <script src="script.js"></script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+</style>
+</head>
+<body>
 
+<!-- Navbar (sit on top) -->
+<div class="objTop">
+  <div class="objBar" id="myNavbar">
+    <a class="objBar-item objButton objHover-black objHide-medium objHide-large objRight" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="objBar-item objButton">HOME</a>
+    <a href="#about" class="objBar-item objButton objHide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="objBar-item objButton objHide-small"><i class="fa fa-th"></i> ???</a>
+    <a href="#contact" class="objBar-item objButton objHide-small"><i class="fa fa-envelope"></i> Technology Help</a>
+    <a href="#" class="objBar-item objButton objHide-small objRight itemColour-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="objSidebar objBar-block objSmall objHide-small objCenter objRoundCorn" id="sidebar">
-  <!-- Avatar image in top left corner -->
-  <img src="./imgs/ProfileImg.png" id="imgProfile">
-  <!--img by Luminaros https://twitter.com/luminaros-->
-  <a href="#" class="objBar-item objButton objPadding-large itemColor-dark-grey">
-    <i class="fas fa-home objXxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="botInfo.html" class="objBar-item objButton objPadding-large itemColor-hover-dark-grey">
-    <i class="fas fa-microchip objXxlarge"></i>
-    <p>WAFFL3SBOT</p>
-  </a>
-  <a href="support.html" class="objBar-item objButton objPadding-large itemColor-hover-dark-grey">
-    <i class="fas fa-headset objXxlarge"></i>
-    <p>TECH SUPPORT</p>
-  </a>
-  <a href="about.html" class="objBar-item objButton objPadding-large itemColor-hover-dark-grey">
-    <i class="fas fa-user objXxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#contact" class="objBar-item objButton objPadding-large itemColor-hover-dark-grey">
-    <i class="fas fa-envelope objXxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-  <a class="objBar-item objButton objPadding-large itemColor-hover-dark-grey" id="off" onclick="lighton()">
-    <i class="fas fa-toggle-off objXxlarge"></i>
-  </a>
-  <a class="objBar-item objButton objPadding-large itemColor-hover-dark-grey" id="on" style='display:none' onclick="darkon()">
-    <i class="fas fa-toggle-on objXxlarge"></i>
-</nav>
-
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="objTop objHide-large objHide-medium" id="myNavbar">
-  <div class="objBar objOpacity objHover-opacity-off objCenter objSmall">
-    <a href="#" class="objBar-item objButton" style="width:25% !important"><i class="fas fa-home"></i> HOME</a>
-    <a href="botInfo.html" class="objBar-item objButton" style="width:25% !important"><i class="fas fa-microchip"></i> WAFFL3SBOT</a>
-    <a href="support.html" class="objBar-item objButton" style="width:25% !important"><i class="fas fa-headset"></i> SUPPORT</a>
-    <a href="about.html" class="objBar-item objButton" style="width:25% !important"><i class="fas fa-user"></i> ABOUT</a>
-    <a href="#contact" class="objBar-item objButton" style="width:25% !important"><i class="fas fa-envelope"></i> CONTACT</a>
+  <!-- Navbar on small screens -->
+  <div id="nav" class="objBar-block itemColour-white objHide objHide-large objHide-medium">
+    <a href="#about" class="objBar-item objButton" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="objBar-item objButton" onclick="toggleFunction()">???</a>
+    <a href="#contact" class="objBar-item objButton" onclick="toggleFunction()">Technology Help</a>
+    <a href="#" class="objBar-item objButton">SEARCH</a>
   </div>
 </div>
 
-<div class="objTop objHide-large objHide-medium objCenter" id="myNavbar2">
-  <div class="objBar objOpacity objHover-opacity-off objCenter objSmall">
-    <a class="objBar-item objButton" style="width:25% !important" id="off" onclick="lighton()"><i class="fas fa-lightbulb"></i></a>
-    <a class="objBar-item objButton" id="on" style="display:none !important" onclick="darkon()"><i class="fas fa-lightbulb"></i></a>
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 objDisplay-container objOpacity-min" id="home">
+  <div class="objDisplay-middle" style="white-space:nowrap;">
+    <span class="objCenter objPadding-large itemColour-black objXlarge objWide objAnimate-opacity">MY <span class="objHide-small">WEBSITE</span> LOGO</span>
   </div>
 </div>
 
-<!-- Page Content -->
-<div class="objPadding-large" id="main">
-  <!-- Header/Home -->
-  <header class="objContainer objPadding-32 objCenter" id="home">
-    <div class="objHide-small">
-    <h1 class="objJumbo">Waffl3Development</h1>
-    <p>Python, C++, and Programmer of WafflesBot.</p>
-    <img src="./imgs/colorKeys.jpg" alt="colorKeys" class="objImage" id="colorKeys">
-    <!--img by Marius Niveri https://unsplash.com/@m4r1vs-->
-  </div>
-
-  <div class="objHide-large objHide-medium">
-    <h1 class="objLarge">Waffl3Development</h1>
-    <p>Python, C++, and Programmer of WafflesBot.</p>
-    <img src="./imgs/colorKeys.jpg" alt="colorKeys" class="objImage" id="colorKeys">
-    <!--img by Marius Niveri https://unsplash.com/@m4r1vs-->
-  </div>
-  </header>
-
-  <!-- About Section -->
-  <div class="objContent objJustify itemColor-text-grey objPadding-64" id="about">
-    <h2>Waffl3Development</h2>
-    <hr style="width:200px" class="objOpacity">
-    <p>What we do</p>
-    <h3 class="objPadding-16">Our Projects</h3>
-  </div>
-    <div class="objRow objCenter objPadding-16 objSection itemColor-light-grey objRoundCorn objContent">
-      <div class="obj-quarter objSection">
-        <span class="objXlarge">1</span><br>
-        Open Projects
-      </div>
-      <div class="obj-quarter objSection">
-        <span class="objXlarge">3</span><br>
-        Projects Done
-      </div>
-      <div class="obj-quarter objSection">
-        <span class="objXlarge">2</span><br>
-        Projects Planned
-      </div>
-      <div class="obj-quarter objSection">
-        <span class="objXlarge">1</span><br>
-        Projects In Use
-      </div>
+<!-- Container (About Section) -->
+<div class="objContent objContainer objPadding-64" id="about">
+  <h3 class="objCenter">ABOUT ME</h3>
+  <p class="objCenter"><em>why are you here?
+  </em></p>
+  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <div class="objRow">
+    <div class="objCol m6 objCenter objPadding-large">
+      <p><b><i class="fa fa-user objMargin-right"></i> Relakye Hydrix</b></p><br>
+      <img src="./imgs/ProfileImg.webp" class="objRoundCorn objImage objOpacity objHover-opacity-off itemColor-border-black" alt="Photo of Me" width="500" height="333">
     </div>
-<div class="objCenter">
-    <button class="objButton itemColor-light-grey itemColor-text-black itemColor-hover-dark-grey itemColor-hover-text-white objPadding-large objSection objRoundCorn">
-      <i class="fa fa-external-link-square-alt"></i> Projects
-    </button>
+
+    <!-- Hide this text on small devices -->
+    <div class="objCol m6 objHide-small objPadding-large">
+      <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  <!--
+  <p class="objLarge objCenter objPadding-16">Im really good at:</p>
+  <p class="objWide"><i class="fa fa-camera"></i>Photography</p>
+  <div class="itemColour-light-grey">
+    <div class="objContainer objPadding-small itemColour-dark-grey objCenter" style="width:90%">90%</div>
+  </div>
+  <p class="objWide"><i class="fa fa-laptop"></i>Web Design</p>
+  <div class="itemColour-light-grey">
+    <div class="objContainer objPadding-small itemColour-dark-grey objCenter" style="width:85%">85%</div>
+  </div>
+  <p class="objWide"><i class="fa fa-photo"></i>Photoshop</p>
+  <div class="itemColour-light-grey">
+    <div class="objContainer objPadding-small itemColour-dark-grey objCenter" style="width:75%">75%</div>
+  </div>
 </div>
 
-  <div class="objSmall objHide-small">
-  <div class="objPadding-64 objContent itemColor-text-grey">
-    <h2 id="contact">Contact Me</h2>
-    <hr class="objOpacity">
-  <!--width:200px-->
-      <div class="contact objSmMargin objXlarge objRoundCorn objLeft objBlock itemColor-hover-dark-grey"><span><i class="fas fa-phone fa-fw objMargin"></i></span><span class="objRight objMargin">(216)-798-8279</span></div>
-      <div class="contact objSmMargin objXlarge objRoundCorn objLeft objBlock itemColor-hover-dark-grey"><span><i class="fas fa-map-marker fa-fw objMargin"></i></span><span class="objRight objMargin">Cleveland OH, United States</span></div>
-      <div class="contact objSmMargin objXlarge objRoundCorn objLeft objBlock itemColor-hover-dark-grey"><span><i class="fas fa-envelope fa-fw objMargin"></i></span><span class="objRight objMargin">tholst371@gmail.com</span></div>
-    <hr class="objOpacity"><br>
-  <!-- End Contact Section -->
+<div class="objRow objCenter itemColour-dark-grey objPadding-16">
+  <div class="objQuarter objSection">
+    <span class="objXlarge">14+</span><br>
+    Partners
   </div>
+  <div class="objQuarter objSection">
+    <span class="objXlarge">55+</span><br>
+    Projects Done
   </div>
-  <!--small-->
-  <div class="objHide-large objHide-medium">
-  <div class="objPadding-64 objContent itemColor-text-grey">
-    <h2>Contact Me</h2>
-    <hr class="objOpacity">
-  <!--width:200px-->
-      <div class="contact objSmMargin objLarge objRoundCorn objLeft objBlock itemColor-hover-dark-grey"><span><i class="fas fa-phone fa-fw objMargin"></i></span><span class="objRight objMargin">(216)-798-8279</span></div>
-      <div class="contact objSmMargin objLarge objRoundCorn objLeft objBlock itemColor-hover-dark-grey"><span><i class="fas fa-map-marker fa-fw objMargin"></span></i><span class="objRight objMargin">Cleveland OH, United States</span></div>
-      <div class="contact objSmMargin objLarge objRoundCorn objLeft objBlock itemColor-hover-dark-grey"><span><i class="fas fa-envelope fa-fw objMargin"></i></span><span class="objRight objMargin">tholst371@gmail.com</span></div>
-    <hr class="objOpacity"><br>
-  <!-- End Contact Section -->
+  <div class="objQuarter objSection">
+    <span class="objXlarge">89+</span><br>
+    Happy Clients
   </div>
+  <div class="objQuarter objSection">
+    <span class="objXlarge">150+</span><br>
+    Meetings
+  </div>
+</div>
+-->
+<!-- Second Parallax Image with Portfolio Text -->
+<a href="https://www.freepik.com/free-vector/gradient-liquid-abstract-background_13403524.htm">
+  <div class="bgimg-2 objDisplay-container objOpacity-min">
+    <div class="objDisplay-middle">
+      <span class="objXxlarge itemColour-text-white objWide">???</span>
+    </div>
+  </div>
+</a>
+
+<!-- Container (Portfolio Section) -->
+<!--<div class="objContent objContainer objPadding-64" id="portfolio">
+  <h3 class="objCenter">MY WORK</h3>
+  <p class="objCenter"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
+-->
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+ <!-- <div class="objRow-padding objCenter">
+    <div class="objCol m3">
+      <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="objHover-opacity" alt="The mist over the mountains">
+    </div>
+
+    <div class="objCol m3">
+      <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="objHover-opacity" alt="Coffee beans">
+    </div>
+
+    <div class="objCol m3">
+      <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="objHover-opacity" alt="Bear closeup">
+    </div>
+
+    <div class="objCol m3">
+      <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="objHover-opacity" alt="Quiet ocean">
+    </div>
   </div>
 
-  <br />
-  <br />
-  <br />
-  <br />
-    <!-- Footer -->
- <footer class="objContent objPadding-64 itemColor-text-grey objXlarge objCenter">
-    <i class="fab fa-instagram objHover-opacity"></i>
+  <div class="objRow-padding objCenter objSection">
+    <div class="objCol m3">
+      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="objHover-opacity" alt="The mist">
+    </div>
+
+    <div class="objCol m3">
+      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="objHover-opacity" alt="My beloved typewriter">
+    </div>
+
+    <div class="objCol m3">
+      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="objHover-opacity" alt="Empty ghost train">
+    </div>
+
+    <div class="objCol m3">
+      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="objHover-opacity" alt="Sailing">
+    </div>
+    <button class="objButton objPadding-large itemColour-light-grey" style="margin-top:64px">LOAD MORE</button>
+  </div>
+</div>
+-->
+<!-- Modal for full size images on click-->
+<div id="modal01" class="objModal itemColour-black" onclick="this.style.display='none'">
+  <span class="objButton objLarge itemColour-black objDisplay-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="objModal-content objAnimate-zoom objCenter itemColour-transparent objPadding-64">
+    <img id="img01" class="objImage">
+    <p id="caption" class="objOpacity objLarge"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 objDisplay-container objOpacity-min">
+  <div class="objDisplay-middle">
+     <span class="objXxlarge itemColour-text-white objWide">Technology Help</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) 
+<div class="objContent objContainer objPadding-64" id="contact">
+  <h3 class="objCenter">WHERE I WORK</h3>
+  <p class="objCenter"><em>I'd love your feedback!</em></p>
+
+  <div class="objRow objPadding-32 objSection">
+    <div class="objCol m4 objContainer">
+      <img src="/w3images/map.jpg" class="objImage objRoundCorn" style="width:100%">
+    </div>
+    <div class="objCol m8 objPanel">
+      <div class="objLarge objMargin-bottom">
+        <i class="fa fa-map-marker fa-fw objHover-text-black objXlarge objMargin-right"></i> Chicago, US<br>
+        <i class="fa fa-phone fa-fw objHover-text-black objXlarge objMargin-right"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope fa-fw objHover-text-black objXlarge objMargin-right"></i> Email: mail@mail.com<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="objRow-padding" style="margin:0 -16px 8px -16px">
+          <div class="objHalf">
+            <input class="objInput objBorder" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="objHalf">
+            <input class="objInput objBorder" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="objInput objBorder" type="text" placeholder="Message" required name="Message">
+        <button class="objButton itemColour-black objRight objSection" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>-->
+
+
+<!-- Footer -->
+<footer class="objCenter itemColour-black objPadding-64 objOpacity objHover-opacity-off">
+  <a href="#home" class="objButton itemColour-light-grey"><i class="fa fa-arrow-up objMargin-right"></i>To the top</a>
+  <div class="objXlarge objSection">
     <i class="fab fa-twitch objHover-opacity"></i>
-    <i class="fab fa-twitter objHover-opacity"></i>
-    <i class="fab fa-linkedin objHover-opacity"></i>
-
-  <!-- End footer -->
+    <i class="fab fa-instagram objHover-opacity"></i>
+    <i class="fab fa-github objHover-opacity"></i>
+    <i class="fab fa-youtube objHover-opacity"></i>
+  </div>
 </footer>
-
 </body>
 </html>
-<!--original css file created by w3Schools found here: https://www.w3schools.com/w3css/ but only certain parts were moved to a new css file and changed for more generic and personal use -->
