@@ -489,14 +489,7 @@ img {
   width: 100%;
 }
 
-.objShow-block,
-.objShow {
-  display: block !important;
-}
 
-.objShow-inline-block {
-  display: inline-block !important;
-}
 
 /* ===align=== */
 .objForceRight {
@@ -1254,15 +1247,22 @@ img {
     padding-top: 50px;
   }
 }
-
-
+/*
 .objShowBlock,
-.objshow {
+.objShow {
+  display: block!important;
+}
+
+.objShow-inline-block {
+  display: inline-block!important;
+}*/
+
+.objShow {
   display: block !important;
 }
 
-.objshow-inline-block {
-  display: inline-block !important;
+.objHide {
+  display: none !important;
 }
 .objHide{display:none!important}
 

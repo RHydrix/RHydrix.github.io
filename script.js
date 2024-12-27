@@ -64,9 +64,9 @@ function myFunction() {
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
     var x = document.getElementById("nav");
-    if (x.className.indexOf("objShow") == -1) {
-        x.className += " objShow";
+    if (x.classList.contains("objShow")) {
+        x.classList.remove("objShow");
     } else {
-        x.className = x.className.replace(" objShow", "");
+        x.classList.add("objShow");
     }
 }
