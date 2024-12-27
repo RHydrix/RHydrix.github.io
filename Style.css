@@ -20,27 +20,49 @@ html{
 
 .bgimg-1 {
   background-image: url('./imgs/ytback.webp');
-  min-height: 100%;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
   background-image: url("./imgs/waves.webp");
-  min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
   background-image: url("./imgs/technology.webp");
-  min-height: 400px;
 }
 
+.bgimg-1_small {
+  background-image: url('./imgs/ytback.webp');
+}
+
+/* Second image (Portfolio) */
+.bgimg-2_small {
+  background-image: url("./imgs/waves.webp");
+}
+
+/* Third image (Contact) */
+.bgimg-3_small {
+  background-image: url("./imgs/technology.webp");
+}
+
+.bgimg-1_medium {
+  background-image: url('./imgs/ytback.webp');
+}
+/* Second image (Portfolio) */
+.bgimg-2_medium {
+  background-image: url("./imgs/waves.webp");
+}
+/* Third image (Contact) */
+.bgimg-3_medium {
+  background-image: url("./imgs/technology.webp");
+}
 
 .cleanBackground {
   background-color: rgba(0, 0, 0, 0.75);
   width: 100%;
 }
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-1_small, .bgimg-2_small, .bgimg-3_small, .bgimg-1_medium, .bgimg-2_medium, .bgimg-3_medium {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -205,7 +227,7 @@ button,select {
 }
 
 button,[type="button"],[type="reset"],[type="submit"] {
-  -webkit-appearance: button;
+  appearance: button;
 }
 
 button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {
@@ -1157,7 +1179,21 @@ img {
 @media only screen and (max-device-width: 1600px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: scroll;
-    min-height: 400px;
+    min-height: 300px;
+  }
+}
+
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1_small, .bgimg-2_small, .bgimg-3_small {
+    background-attachment: scroll;
+    min-height: 100px;
+  }
+}
+
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1_medium, .bgimg-2_medium, .bgimg-3_medium {
+    background-attachment: scroll;
+    min-height: 200px;
   }
 }
 
