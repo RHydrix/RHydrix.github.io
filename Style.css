@@ -18,51 +18,49 @@ html{
   -ms-text-size-adjust:100%;-webkit-text-size-adjust:100%
 }
 
+/*
+.bgimg-1_Large {
+  background-image: url('./imgs/ytback.webp');
+}
+
+.bgimg-2_Large {
+  background-image: url("./imgs/waves.webp");
+}
+*/
 .bgimg-1 {
   background-image: url('./imgs/ytback.webp');
+  min-height: 600px;
+  width: 100%;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
   background-image: url("./imgs/waves.webp");
+  min-height: 250px;
 }
-
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("./imgs/technology.webp");
-}
-
+/*
 .bgimg-1_small {
   background-image: url('./imgs/ytback.webp');
 }
 
-/* Second image (Portfolio) */
+/* Second image (Portfolio) 
 .bgimg-2_small {
-  background-image: url("./imgs/waves.webp");
-}
-
-/* Third image (Contact) */
-.bgimg-3_small {
-  background-image: url("./imgs/technology.webp");
+  background-image: url("/imgs/waves.webp");
 }
 
 .bgimg-1_medium {
   background-image: url('./imgs/ytback.webp');
 }
-/* Second image (Portfolio) */
-.bgimg-2_medium {
-  background-image: url("./imgs/waves.webp");
-}
-/* Third image (Contact) */
-.bgimg-3_medium {
-  background-image: url("./imgs/technology.webp");
-}
 
+/* Second image (Portfolio) 
+.bgimg-2_medium {
+  background-image: url("/imgs/waves.webp");
+}*/
 .cleanBackground {
   background-color: rgba(0, 0, 0, 0.75);
   width: 100%;
 }
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-1_small, .bgimg-2_small, .bgimg-3_small, .bgimg-1_medium, .bgimg-2_medium, .bgimg-3_medium {
+.bgimg-1, .bgimg-2, .bgimg-1_small, .bgimg-2_small_small, .bgimg-1_medium, .bgimg-2_medium_medium {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -1107,10 +1105,11 @@ img {
 }
 
 /* ===hover=== */
+
 .objOpacity,
 .objHover-opacity:hover {
-  opacity: 0.6;
   cursor: pointer;
+  opacity: 0.60;
 }
 
 .objOpacity-off,
@@ -1170,23 +1169,9 @@ img {
 }
 
 @media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
+  .bgimg-1, .bgimg-2 {
     background-attachment: scroll;
     min-height: 300px;
-  }
-}
-
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1_small, .bgimg-2_small, .bgimg-3_small {
-    background-attachment: scroll;
-    min-height: 100px;
-  }
-}
-
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1_medium, .bgimg-2_medium, .bgimg-3_medium {
-    background-attachment: scroll;
-    min-height: 200px;
   }
 }
 
@@ -1257,14 +1242,24 @@ img {
   display: inline-block!important;
 }*/
 
-.objShow {
-  display: block !important;
+.objShow-block,.obj-Show {
+  display: block!important
 }
 
-.objHide {
-  display: none !important;
+.objShow-inline-block {
+  display: inline-block!important
 }
-.objHide{display:none!important}
+
+.objHide{
+  display: none !important
+}
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
 
 @media (max-width:600px){.objModal-content{margin:0 10px;width:auto!important}.objModal{padding-top:30px}
 .objDropdown-hover.objMobile .objDropdown-content,.objDropdown-click.objMobile .objDropdown-content{position:relative}	
@@ -1272,6 +1267,10 @@ img {
 .objDropdown-hover.objMobile,.objDropdown-hover.objMobile .objBtn,.objDropdown-hover.objMobile .objButton,.objDropdown-click.objMobile,.objDropdown-click.objMobile .objBtn,.objDropdown-click.objMobile .objButton{width:100%}}
 
 
+/*
+@media (min-width:993px) {
+  .objModal-content{min-width: none;}.objHide-xLarge{display:none!important}.objSidebar.objCollapse{display:block!important}
+}
 @media (min-width:993px) {
   .objModal-content{width:900px}.objHide-large{display:none!important}.objSidebar.objCollapse{display:block!important}
 }
@@ -1287,7 +1286,7 @@ img {
     display: none !important;
   }
 }
-
+*/
 /* ===top/bottom=== */
 .objTop,
 .objBottom {
@@ -1344,7 +1343,7 @@ img {
   width: 100%;
 }
 
-.objCol.m6,
+.objCol,.m6,
 .objHalf {
   width: 49.99999%;
 }
@@ -1445,4 +1444,11 @@ img {
 }
 .objCard-4,.objHover-shadow:hover {
   box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)
+}
+
+.w3-opacity-max{
+  opacity:0.25
+}
+.w3-opacity-min{
+  opacity:0.75
 }
