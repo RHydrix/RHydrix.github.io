@@ -4,7 +4,7 @@
 <title>RelakyeVT</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="Style.css" >
+<link rel="stylesheet" href="style.css" >
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,12 +23,13 @@ body, html {
 
 <!-- Navbar (sit on top) -->
 <div class="objTop">
-  <div class="objBar" id="myNavbar">
+  <div class="objBar objRoundCornTop" id="myNavbar">
     <!--::before--> 
-    <a class="objBar-item objButton objHover-black objHide-medium objHide-large objRight" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#home" class="objBar-item objButton">HOME</a>
+    <button id="menuBtn" class="objBar-item objButton objHover-black objHide-medium objHide-large objRight" aria-controls="navGate" aria-expanded="false"  title="Toggle Navigation Menu">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+      <span class="sr-only">Toggle Navigation Menu</span>
+    </button>
+    <a href="#top" class="objBar-item objButton">HOME</a>
     <a href="#about" class="objBar-item objButton objHide-small"><i class="fa fa-user"></i> ABOUT</a>
     <a href="#portfolio" class="objBar-item objButton objHide-small"><i class="fa fa-th"></i> ???</a>
   <!--::after-->
@@ -42,7 +43,7 @@ body, html {
 </div>
 
 <!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 objDisplay-container objOpacity-min" id="home">
+<div class="bgimg-1 objDisplay-container objOpacity-min">
   <div class="objDisplay-middle" style="white-space:nowrap;">
     <span class="objCenter objPadding-large objXlarge objWide">
       <div class="stack objRoundCorn">
@@ -121,6 +122,6 @@ body, html {
   </div>
 </footer>
 </div>
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 </body>
 </html>

@@ -5,7 +5,8 @@ body {
   color: #000 !important;
   background-color: #fff !important;
   height: 100%;
-  margin:0
+  margin:0;
+  padding-top: var(--topbar-height);
 }
 html {
   box-sizing:border-box
@@ -17,7 +18,9 @@ html {
 html{
   -ms-text-size-adjust:100%;-webkit-text-size-adjust:100%
 }
-
+:root {
+  --topbar-height: 64px; 
+}
 /*
 .bgimg-1_Large {
   background-image: url('./imgs/ytback.webp');
@@ -47,6 +50,9 @@ html{
   background-color:rgba(255,255,255,0.2);
 }
 
+.topBarBackground{
+  background-color:rgba(255,255,255,0.2);
+}
 
 /*
 .bgimg-1_small {
@@ -303,6 +309,9 @@ hr {
 /* ===other=== */
 .objRoundCorn {
   border-radius: 5px;
+}
+.objRoundCornTop {
+  border-radius: 0 0 5px 5px;
 }
 .objBarRoundCorn {
   border-radius: 5px 0 0 5px;
