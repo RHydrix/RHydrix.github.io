@@ -24,12 +24,14 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="objTop">
   <div class="objBar" id="myNavbar">
+    <!--::before--> 
     <a class="objBar-item objButton objHover-black objHide-medium objHide-large objRight" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
     <a href="#home" class="objBar-item objButton">HOME</a>
     <a href="#about" class="objBar-item objButton objHide-small"><i class="fa fa-user"></i> ABOUT</a>
     <a href="#portfolio" class="objBar-item objButton objHide-small"><i class="fa fa-th"></i> ???</a>
+  <!--::after-->
   </div>
 
   <!-- Navbar on small screens -->
@@ -42,7 +44,12 @@ body, html {
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 objDisplay-container objOpacity-min" id="home">
   <div class="objDisplay-middle" style="white-space:nowrap;">
-    <span class="objCenter objPadding-large itemColour-black objXlarge objWide objAnimate-opacity">MY <span class="objHide-small">WEBSITE</span> LOGO</span>
+    <span class="objCenter objPadding-large objXlarge objWide">
+      <div class="stack objRoundCorn">
+        <div class=""></div>
+        <div class=""><img src="./imgs/Logo.webp" class="objImage"></div>
+      </div>
+    </span>
   </div>
 </div>
 
@@ -53,38 +60,38 @@ body, html {
   
   <div class="objRow">
     <div class="objCol m6 objCenter objPadding-large">
-      <p><b><i class="fa fa-user objMargin-right"></i> Relakye Hydrix</b></p><br>
+      <p><b><i class="fa fa-user objMargin-right"></i> RelakyeVT</b></p><br>
       <div class="hoverable">
-        <span class="hoverable__main"><img src="./imgs/ProfileImg.webp" class="objRoundCorn objImage objOpacity objHover-opacity-off itemColor-border-black hoverable__main" alt="Photo of Me" width="900" height="666"></span>
-        <span class="hoverable__tooltip objRoundCorn objPadding">Hover text</span>
+        <span class="hoverable__main"><img src="./imgs/ProfileImg_DG_STUDIO.webp" class="objRoundCorn objImage objHoverOpacity objHover-opacity-off itemColor-border-black hoverable__main" alt="Photo of Me" width="900" height="666"></span>
+        <span class="hoverable__tooltip objRoundCorn objPadding">Current Model (Premade)(Made by KenKenMo6onX)</span>
       </div>
     </div>    
     <!-- Hide this text on small devices -->
     <div class="objCol m6 objHide-small objPadding-large">
-      <p> Hi there! I'm Relakye Hydrix also known as RelakyeVT or RHydrix, I am a technology technician with a passion for all things tech. I love diving into new software, hardware, and figuring out how things work.
+      <p> Hi there! I'm RelakyeVT also known as Relakye Hydrix (Full Name) or RHydrix (development), I am a technology technician with a passion for all things tech. I love diving into new software, hardware, and figuring out how things work.
         <br>
         <br>
         When I'm not tinkering with tech, you can find me immersed in the world of video games. I'm always on the lookout for new games to try, and I love the challenge of mastering different genres. I'm also starting to explore the world of music creation, and I'm excited to see where that journey takes me.
         <br>
         <br>
-        Streaming is another interest of mine, and I'm particularly excited about the world of Vtubing! I'm currently learning more about this technology and absolutely love my virtual model. I'm even thinking about branching out into rigging 2D models, which seems like a really interesting challenge.
+        Streaming is another interest of mine, and I'm particularly excited about the world of Vtubing! I'm currently learning more about this technology and absolutely love my virtual models.
         <br>
         <br>
         Of course, I also enjoy sharing my gaming experiences with others, and I'm always looking for new ways to connect with new friends or just hanging out with the community.</p>
     </div>
     <div class="objRow">
     <div class="objCol m6 objRight objCenter objPadding-large">
-      <p><div class="objCenter"><b><i class="fa fa-user objMargin-right"></i> Relakye Hydrix</b></div></p><br>
+     <!-- <p><div class="objCenter"><b><i class="fa fa-user objMargin-right"></i> Relakye Hydrix</b></div></p><br>-->
       <div class="hoverable">
-      <span class="hoverable__main"><img src="./imgs/ProfileImg_DG_STUDIO.webp" class="objRoundCorn objImage objOpacity objHover-opacity-off itemColor-border-black" alt="Photo of Me" width="900" height="666"></span>
-      <span class="hoverable__tooltip objRoundCorn objPadding">Hover text</span>
+      <span class="hoverable__main"><img src="./imgs/ProfileImg.webp" class="objRoundCorn objImage objHoverOpacity objHover-opacity-off itemColor-border-black" alt="Photo of Me" width="900" height="666"></span>
+      <span class="hoverable__tooltip objRoundCorn objPadding">Classic Model (requested)</span>
     </div>
   </div>
 </div>
 <br><br>
 <br>
 <br>
-<!-- Second Parallax Image with Portfolio Text -->
+<!-- Second Parallmax Image with Portfolio Text -->
 <a href=""><!--https://www.freepik.com/free-vector/gradient-liquid-abstra.ct-background_13403524.htm-->
   <div class="bgimg-2 objDisplay-container objOpacity-min">
     <div class="objDisplay-middle">
@@ -98,7 +105,7 @@ body, html {
   <span class="objButton objLarge itemColour-black objDisplay-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
   <div class="objModal-content objAnimate-zoom objCenter itemColour-transparent objPadding-64">
     <img id="img01" class="objImage">
-    <p id="caption" class="objOpacity objLarge"></p>
+    <p id="caption" class="objHoverOpacity objLarge"></p>
   </div>
 </div>
 

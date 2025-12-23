@@ -19,10 +19,10 @@ function myFunction() {
 
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
-  var x = document.getElementById("navGate");
-  if (x.classList.contains("objShow")) {
-      x.classList.remove("objShow");
-  } else {
-      x.classList.add("objShow");
-  }
+    var x = document.getElementById("navGate");
+    if (x.className.indexOf("objshow") == -1) {
+        x.className += " objshow";
+    } else {
+        x.className = x.className.replace(" objshow", "");
+    }
 }

@@ -38,6 +38,16 @@ html{
   background-image: url("./imgs/waves.webp");
   min-height: 250px;
 }
+
+/*stack test*/
+.stack{
+  height: auto;
+  max-width: 500px;
+  position: static;
+  background-color:rgba(255,255,255,0.2);
+}
+
+
 /*
 .bgimg-1_small {
   background-image: url('./imgs/ytback.webp');
@@ -364,6 +374,11 @@ img {
 
 .objImageMed {
   max-width: 85%;
+  height: auto;
+}
+
+.objImageMid {
+  max-width: 50%;
   height: auto;
 }
 
@@ -1104,17 +1119,24 @@ img {
   background-color: #ccc;
 }
 
+
+.objOpacity {
+  opacity: 0.60; 
+}
+
 /* ===hover=== */
 
-.objOpacity,
+.objHoverOpacity,
 .objHover-opacity:hover {
   cursor: pointer;
   opacity: 0.60;
 }
 
+
+
 .objOpacity-off,
 .objHover-opacity-off:hover {
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 /* ===section=== */
@@ -1232,23 +1254,11 @@ img {
     padding-top: 50px;
   }
 }
-/*
-.objShowBlock,
-.objShow {
-  display: block!important;
-}
 
-.objShow-inline-block {
-  display: inline-block!important;
-}*/
+.objshow-block,.objshow{display:block!important}
 
-.objShow-block,.obj-Show {
-  display: block!important
-}
+.objshow-inline-block{display:inline-block!important}
 
-.objShow-inline-block {
-  display: inline-block!important
-}
 
 .objHide{
   display: none !important
